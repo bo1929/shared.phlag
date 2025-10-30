@@ -1,0 +1,122 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 25-May-2023 08:55:20 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/21_1X_S21_1e6_1.5 --tree pars{1} --model GTR+G --threads 8 --tree-constraint S21/raxml-5.polytomy --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  topological constraint: S21/raxml-5.polytomy (algorithm: NEW)
+  random seed: 1685030120
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/21_1X_S21_1e6_1.5
+[00:00:01] Loaded alignment with 105 taxa and 5000000 sites
+
+ERROR: Sequences 1 and 2 have identical name: T30
+ERROR: Sequences 1 and 3 have identical name: T30
+ERROR: Sequences 1 and 4 have identical name: T30
+ERROR: Sequences 1 and 5 have identical name: T30
+ERROR: Sequences 6 and 7 have identical name: T170
+ERROR: Sequences 6 and 8 have identical name: T170
+ERROR: Sequences 6 and 9 have identical name: T170
+ERROR: Sequences 6 and 10 have identical name: T170
+ERROR: Sequences 11 and 12 have identical name: T60
+ERROR: Sequences 11 and 13 have identical name: T60
+ERROR: Sequences 11 and 14 have identical name: T60
+ERROR: Sequences 11 and 15 have identical name: T60
+ERROR: Sequences 16 and 17 have identical name: T70
+ERROR: Sequences 16 and 18 have identical name: T70
+ERROR: Sequences 16 and 19 have identical name: T70
+ERROR: Sequences 16 and 20 have identical name: T70
+ERROR: Sequences 21 and 22 have identical name: T140
+ERROR: Sequences 21 and 23 have identical name: T140
+ERROR: Sequences 21 and 24 have identical name: T140
+ERROR: Sequences 21 and 25 have identical name: T140
+ERROR: Sequences 26 and 27 have identical name: T130
+ERROR: Sequences 26 and 28 have identical name: T130
+ERROR: Sequences 26 and 29 have identical name: T130
+ERROR: Sequences 26 and 30 have identical name: T130
+ERROR: Sequences 31 and 32 have identical name: T110
+ERROR: Sequences 31 and 33 have identical name: T110
+ERROR: Sequences 31 and 34 have identical name: T110
+ERROR: Sequences 31 and 35 have identical name: T110
+ERROR: Sequences 36 and 37 have identical name: T20
+ERROR: Sequences 36 and 38 have identical name: T20
+ERROR: Sequences 36 and 39 have identical name: T20
+ERROR: Sequences 36 and 40 have identical name: T20
+ERROR: Sequences 41 and 42 have identical name: T150
+ERROR: Sequences 41 and 43 have identical name: T150
+ERROR: Sequences 41 and 44 have identical name: T150
+ERROR: Sequences 41 and 45 have identical name: T150
+ERROR: Sequences 46 and 47 have identical name: T10
+ERROR: Sequences 46 and 48 have identical name: T10
+ERROR: Sequences 46 and 49 have identical name: T10
+ERROR: Sequences 46 and 50 have identical name: T10
+ERROR: Sequences 51 and 52 have identical name: T200
+ERROR: Sequences 51 and 53 have identical name: T200
+ERROR: Sequences 51 and 54 have identical name: T200
+ERROR: Sequences 51 and 55 have identical name: T200
+ERROR: Sequences 56 and 57 have identical name: T80
+ERROR: Sequences 56 and 58 have identical name: T80
+ERROR: Sequences 56 and 59 have identical name: T80
+ERROR: Sequences 56 and 60 have identical name: T80
+ERROR: Sequences 61 and 62 have identical name: T180
+ERROR: Sequences 61 and 63 have identical name: T180
+ERROR: Sequences 61 and 64 have identical name: T180
+ERROR: Sequences 61 and 65 have identical name: T180
+ERROR: Sequences 66 and 67 have identical name: T40
+ERROR: Sequences 66 and 68 have identical name: T40
+ERROR: Sequences 66 and 69 have identical name: T40
+ERROR: Sequences 66 and 70 have identical name: T40
+ERROR: Sequences 71 and 72 have identical name: T120
+ERROR: Sequences 71 and 73 have identical name: T120
+ERROR: Sequences 71 and 74 have identical name: T120
+ERROR: Sequences 71 and 75 have identical name: T120
+ERROR: Sequences 76 and 77 have identical name: T100
+ERROR: Sequences 76 and 78 have identical name: T100
+ERROR: Sequences 76 and 79 have identical name: T100
+ERROR: Sequences 76 and 80 have identical name: T100
+ERROR: Sequences 81 and 82 have identical name: T160
+ERROR: Sequences 81 and 83 have identical name: T160
+ERROR: Sequences 81 and 84 have identical name: T160
+ERROR: Sequences 81 and 85 have identical name: T160
+ERROR: Sequences 86 and 87 have identical name: T90
+ERROR: Sequences 86 and 88 have identical name: T90
+ERROR: Sequences 86 and 89 have identical name: T90
+ERROR: Sequences 86 and 90 have identical name: T90
+ERROR: Sequences 91 and 92 have identical name: T50
+ERROR: Sequences 91 and 93 have identical name: T50
+ERROR: Sequences 91 and 94 have identical name: T50
+ERROR: Sequences 91 and 95 have identical name: T50
+ERROR: Sequences 96 and 97 have identical name: T190
+ERROR: Sequences 96 and 98 have identical name: T190
+ERROR: Sequences 96 and 99 have identical name: T190
+ERROR: Sequences 96 and 100 have identical name: T190
+ERROR: Sequences 101 and 102 have identical name: T0
+ERROR: Sequences 101 and 103 have identical name: T0
+ERROR: Sequences 101 and 104 have identical name: T0
+ERROR: Sequences 101 and 105 have identical name: T0
+
+ERROR: Duplicate sequence names found: 84
+
+ERROR: Alignment check failed (see details above)!
+

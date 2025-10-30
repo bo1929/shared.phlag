@@ -1,0 +1,96 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 02-Jan-2023 11:00:49 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/4_0.1X_S201_0_haploid --tree pars{1} --model GTR+G --threads 64
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1672686049
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (64 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: data/alignment/4_0.1X_S201_0_haploid
+[00:00:02] Loaded alignment with 201 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 295034 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 295034
+Gaps: 0.00 %
+Invariant sites: 67.73 %
+
+
+NOTE: Binary MSA file created: data/alignment/4_0.1X_S201_0_haploid.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 64 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:20] Generating 1 parsimony starting tree(s) with 201 taxa
+[00:00:24] Data distribution: max. partitions/sites/weight per thread: 1 / 4610 / 73760
+[00:00:24] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:24 -52336782.653522] Initial branch length optimization
+[00:00:26 -24886744.674286] Model parameter optimization (eps = 10.000000)
+[00:00:31 -24460693.418526] AUTODETECT spr round 1 (radius: 5)
+[00:00:43 -24460342.099378] AUTODETECT spr round 2 (radius: 10)
+[00:01:12 -24460342.099378] SPR radius for FAST iterations: 5 (autodetect)
+[00:01:13 -24460342.099378] Model parameter optimization (eps = 3.000000)
+[00:01:13 -24460341.739292] FAST spr round 1 (radius: 5)
+[00:01:25 -24460280.886416] FAST spr round 2 (radius: 5)
+[00:01:38 -24460253.070527] FAST spr round 3 (radius: 5)
+[00:01:51 -24460250.864661] FAST spr round 4 (radius: 5)
+[00:02:04 -24460250.864661] Model parameter optimization (eps = 1.000000)
+[00:02:04 -24460250.857676] SLOW spr round 1 (radius: 5)
+[00:02:49 -24460250.857676] SLOW spr round 2 (radius: 10)
+[00:03:34 -24460250.857676] SLOW spr round 3 (radius: 15)
+[00:05:05 -24460250.857676] SLOW spr round 4 (radius: 20)
+[00:06:20 -24460250.857676] SLOW spr round 5 (radius: 25)
+[00:06:41 -24460250.857676] Model parameter optimization (eps = 0.100000)
+
+[00:06:41] ML tree search #1, logLikelihood: -24460250.854532
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 2.609633 (ML),  weights&rates: (0.250000,0.356610) (0.250000,0.707334) (0.250000,1.079770) (0.250000,1.856285) 
+   Base frequencies (ML): 0.291601 0.179940 0.260385 0.268074 
+   Substitution rates (ML): 0.826146 2.195071 0.317597 1.701381 1.965365 1.000000 
+
+
+Final LogLikelihood: -24460250.854532
+
+AIC score: 48921317.709065 / AICc score: 48921317.775819 / BIC score: 48926795.088041
+Free parameters (model + branch lengths): 408
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/4_0.1X_S201_0_haploid.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/4_0.1X_S201_0_haploid.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/4_0.1X_S201_0_haploid.raxml.log
+
+Analysis started: 02-Jan-2023 11:00:49 / finished: 02-Jan-2023 11:07:31
+
+Elapsed time: 401.788 seconds
+
+Consumed energy: 51.123 Wh
+

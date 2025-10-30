@@ -1,0 +1,35 @@
+Iteration 1:
+Accurate Species Tree EstimatoR from Independent Site Kernals
+Version: v1.13.0.0
+#Base: 4248768
+#Species: 12
+#Rounds: 4
+#Samples: 4
+#Threads: 16
+#NNI moves:0/44
+(((((((Achlorocyanus,Aoccultus),Ainsolitus),Acybotes),(Aangusticeps,Acarolinensis)),(Acristatellus,Aevermanii)),((Alineatopus,Agrahami),Avalencienni)),Asagrei);
+#NNI moves:0/44
+(((((((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes),(Aangusticeps,Acarolinensis)),(((Agrahami,Alineatopus),Avalencienni),Asagrei)),Acristatellus),Aevermanii);
+#NNI moves:0/44
+(((((((Alineatopus,Agrahami),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(((Achlorocyanus,Aoccultus),Ainsolitus),Acybotes)),Acarolinensis),Aangusticeps);
+#NNI moves:0/44
+(((((((((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes),(Acarolinensis,Aangusticeps)),(Aevermanii,Acristatellus)),Asagrei),Avalencienni),Alineatopus),Agrahami);
+Initial score: 284946
+Initial tree: ((Aangusticeps,((((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes),((Aevermanii,Acristatellus),(Asagrei,(Avalencienni,(Alineatopus,Agrahami)))))),Acarolinensis);
+*** Subsample Process ***
+#NNI moves:0/44
+(((((((Agrahami,Alineatopus),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes)),Aangusticeps),Acarolinensis);
+#NNI moves:0/44
+(((((((Alineatopus,Agrahami),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes)),Aangusticeps),Acarolinensis);
+#NNI moves:0/44
+(((((((((Achlorocyanus,Aoccultus),Ainsolitus),Acybotes),(Aangusticeps,Acarolinensis)),(Acristatellus,Aevermanii)),Asagrei),Avalencienni),Agrahami),Alineatopus);
+#NNI moves:0/44
+(((((((Alineatopus,Agrahami),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(Acarolinensis,Aangusticeps)),((Aoccultus,Achlorocyanus),Ainsolitus)),Acybotes);
+Current score: 284946
+Current tree: ((Aangusticeps,(((((Alineatopus,Agrahami),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes))),Acarolinensis);
+Final Tree: ((Aangusticeps,(((((Alineatopus,Agrahami),Avalencienni),Asagrei),(Aevermanii,Acristatellus)),(((Aoccultus,Achlorocyanus),Ainsolitus),Acybotes))),Acarolinensis);
+Score: 284946
+
+real	0m5.674s
+user	0m53.085s
+sys	0m0.328s

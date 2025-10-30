@@ -1,0 +1,109 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 26-May-2023 01:46:35 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/20_1X_S21_1e6_1.5.rename --tree pars{1} --model GTR+G --threads 8 --tree-constraint S21/raxml-5.polytomy --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  topological constraint: S21/raxml-5.polytomy (algorithm: NEW)
+  random seed: 1685090795
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/20_1X_S21_1e6_1.5.rename
+[00:00:01] Loaded alignment with 105 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 1984918 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 1984918
+Gaps: 0.00 %
+Invariant sites: 27.19 %
+
+
+NOTE: Binary MSA file created: data/alignment/20_1X_S21_1e6_1.5.rename.raxml.rba
+
+[00:00:14] Loading constraint tree from: S21/raxml-5.polytomy
+[00:00:14] Loaded comprehensive constraint tree with 105 taxa
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:14] Generating 1 parsimony starting tree(s) with 105 taxa
+[00:01:42] Data distribution: max. partitions/sites/weight per thread: 1 / 248115 / 3969840
+[00:01:42] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:01:43 -103281081.610195] Initial branch length optimization
+[00:06:35 -94850220.379833] Model parameter optimization (eps = 10.000000)
+[00:51:07 -89187378.023412] AUTODETECT spr round 1 (radius: 5)
+[00:59:01 -89187377.826495] AUTODETECT spr round 2 (radius: 10)
+[01:03:16 -89187377.816991] SPR radius for FAST iterations: 5 (autodetect)
+[01:03:16 -89187377.816991] Model parameter optimization (eps = 3.000000)
+[01:05:52 -89187373.299916] FAST spr round 1 (radius: 5)
+[01:37:02 -89186869.500288] FAST spr round 2 (radius: 5)
+[02:11:01 -89186495.383418] FAST spr round 3 (radius: 5)
+[02:43:29 -89186252.939532] FAST spr round 4 (radius: 5)
+[03:16:02 -89186071.136939] FAST spr round 5 (radius: 5)
+[03:48:52 -89186071.136925] Model parameter optimization (eps = 1.000000)
+[03:50:03 -89186070.447915] SLOW spr round 1 (radius: 5)
+[04:45:52 -89185472.178878] SLOW spr round 2 (radius: 5)
+[05:33:57 -89184995.849188] SLOW spr round 3 (radius: 5)
+[06:18:18 -89183812.649750] SLOW spr round 4 (radius: 5)
+[07:15:41 -89183525.723598] SLOW spr round 5 (radius: 5)
+[08:08:59 -89183503.800708] SLOW spr round 6 (radius: 5)
+[09:09:16 -89183427.693058] SLOW spr round 7 (radius: 5)
+[09:53:46 -89183427.692468] SLOW spr round 8 (radius: 10)
+[10:18:43 -89183427.692463] SLOW spr round 9 (radius: 15)
+[10:21:06 -89183427.692463] SLOW spr round 10 (radius: 20)
+[10:23:28 -89183427.692463] SLOW spr round 11 (radius: 25)
+[10:25:50 -89183427.692463] Model parameter optimization (eps = 0.100000)
+
+[10:28:24] ML tree search #1, logLikelihood: -89183425.954619
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.769948 (ML),  weights&rates: (0.250000,0.089150) (0.250000,0.394747) (0.250000,0.948267) (0.250000,2.567836) 
+   Base frequencies (ML): 0.312331 0.103441 0.200528 0.383700 
+   Substitution rates (ML): 2.656612 6.648051 0.387567 2.839283 7.498828 1.000000 
+
+
+Final LogLikelihood: -89183425.954619
+
+AIC score: 178367283.909238 / AICc score: 178367283.927987 / BIC score: 178370183.698107
+Free parameters (model + branch lengths): 216
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/20_1X_S21_1e6_1.5.rename.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/20_1X_S21_1e6_1.5.rename.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/20_1X_S21_1e6_1.5.rename.raxml.log
+
+Analysis started: 26-May-2023 01:46:35 / finished: 26-May-2023 12:15:00
+
+Elapsed time: 37704.505 seconds
+
+Consumed energy: 4631.622 Wh (= 23 km in an electric car, or 116 km with an e-scooter!)
+

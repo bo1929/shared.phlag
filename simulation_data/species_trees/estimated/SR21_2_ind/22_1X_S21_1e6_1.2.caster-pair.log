@@ -1,0 +1,21 @@
+Massive-scale Alignment-based Species Tree EstimatoR (Pair)
+Version: v1.15.0.0
+Processing /home/chaos/lustre/ASTERISK-sim/data/alignment/22_1X_S21_1e6_1.2... 
+#Base: 485805810
+#Species: 21
+#Rounds: 1
+#Samples: 0
+#Threads: 16
+#NNI moves:3/60
+(((((((((((T40,T180),T50),T140),((T200,T110),T130)),T0),((((T150,T80),T20),T170),T90)),(T60,T10)),T30),(T70,T190)),(T160,T100)),T120);
+Initial score: 7.64467e+11
+Initial tree: ((T200,(T130,((((T40,T180),T50),T140),(T0,(((((T150,T80),T20),T170),T90),((T60,T10),(T30,((T70,T190),((T160,T100),T120))))))))),T110);
+*** Subsample Process ***
+Current score: 7.64467e+11
+Current tree: ((T200,(T130,((((T40,T180),T50),T140),(T0,(((((T150,T80),T20),T170),T90),((T60,T10),(T30,((T70,T190),((T160,T100),T120))))))))),T110);
+Final Tree: ((T200,(T130,((((T40,T180),T50),T140),(T0,(((((T150,T80),T20),T170),T90),((T60,T10),(T30,((T70,T190),((T160,T100),T120))))))))),T110);
+Score: 7.64467e+11
+
+real	1m4.012s
+user	11m10.340s
+sys	0m1.577s

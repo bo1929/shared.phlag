@@ -1,0 +1,20 @@
+Accurate Species Tree EstimatoR from Independent Site Kernals
+Version: v1.13.0.0
+#Base: 165886980
+#Species: 21
+#Rounds: 1
+#Samples: 0
+#Threads: 16
+#NNI moves:0/60
+((((((((((((T30,T90),T40),(T80,T110)),(T160,T120)),T100),T140),T0),((T20,T130),T180)),((T190,T50),T150)),T70),((T10,T60),T170)),T200);
+Initial score: 2.57194e+10
+Initial tree: (((((((T30,T90),T40),(T80,T110)),(T160,T120)),T100),(T0,(((T20,T130),T180),(((T190,T50),T150),(T70,(((T10,T60),T170),T200)))))),T140);
+*** Subsample Process ***
+Current score: 2.57194e+10
+Current tree: (((((((T30,T90),T40),(T80,T110)),(T160,T120)),T100),(T0,(((T20,T130),T180),(((T190,T50),T150),(T70,(((T10,T60),T170),T200)))))),T140);
+Final Tree: (((((((T30,T90),T40),(T80,T110)),(T160,T120)),T100),(T0,(((T20,T130),T180),(((T190,T50),T150),(T70,(((T10,T60),T170),T200)))))),T140);
+Score: 2.57194e+10
+
+real	0m51.920s
+user	12m11.949s
+sys	0m1.243s

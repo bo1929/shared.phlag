@@ -1,0 +1,41 @@
+
+Error(#102): Cannot find file "/home/chaos/lustre/ASTERISK-sim/data/alignment/1_1X_S201_0_haploid.nex"
+                 Make sure the filename has been specified correctly (including upper- vs. lower-case on operating systems where case is important in
+                 filenames).
+
+Error occurred while processing line 2 of file svd_1
+paup>
+P A U P *
+Version 4.0a (build 168) for Unix/Linux (built on Aug  2 2020 at 07:23:11)
+Tue Jan 24 14:48:14 2023
+
+        -----------------------------NOTICE-----------------------------
+          This is a test version that is still changing rapidly.
+          Please report bugs to dave@phylosolutions.com
+        ----------------------------------------------------------------
+
+Running on AMD EPYC 7742 64-Core Processor
+    128 CPU cores on 2 sockets
+    Executable built for Intel(R) 64 architecture
+    Compiled using GNU C compiler (gcc) 4.8.4
+    SSE vectorization enabled
+    SSSE3 instructions supported
+    Multithreading enabled using Pthreads
+
+Processing of file "~/lustre/ASTERISK-sim/scripts/svd_1" begins...
+
+Error(#102): Cannot find file "/home/chaos/lustre/ASTERISK-sim/data/alignment/1_1X_S201_0_haploid.nex"
+                 Make sure the filename has been specified correctly (including upper- vs. lower-case on operating systems where case is important in
+                 filenames).
+
+Error occurred while processing line 2 of file svd_1
+
+Processing of input file "svd_1" terminated due to errors.
+
+paup>
+Error(#161): Expected input not found or invalid. If you are not running interactively you should specify the -n (-Noninteractive) flag at program
+             startup.
+
+
+Error(#161): Expected input not found or invalid. If you are not running interactively you should specify the -n (-Noninteractive) flag at program
+             startup.

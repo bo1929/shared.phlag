@@ -1,0 +1,101 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 31-Jan-2023 23:08:18 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa 4 --tree pars{1} --model GTR+G --threads 16
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1675235298
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (16 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: 4
+[00:00:01] Loaded alignment with 201 taxa and 4000000 sites
+
+Alignment comprises 1 partitions and 3225561 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 4000000 / 3225561
+Gaps: 0.00 %
+Invariant sites: 10.45 %
+
+
+NOTE: Binary MSA file created: 4.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 16 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:17] Generating 1 parsimony starting tree(s) with 201 taxa
+[00:00:39] Data distribution: max. partitions/sites/weight per thread: 1 / 201598 / 3225568
+[00:00:39] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:40 -210816158.403659] Initial branch length optimization
+[00:06:43 -199863620.109347] Model parameter optimization (eps = 10.000000)
+[01:09:36 -193406185.697342] AUTODETECT spr round 1 (radius: 5)
+[01:38:25 -193300741.865372] AUTODETECT spr round 2 (radius: 10)
+[02:49:35 -193300741.854321] SPR radius for FAST iterations: 5 (autodetect)
+[02:49:35 -193300741.854321] Model parameter optimization (eps = 3.000000)
+[02:52:47 -193300730.828292] FAST spr round 1 (radius: 5)
+[03:42:56 -193298441.032081] FAST spr round 2 (radius: 5)
+[04:30:42 -193296179.810170] FAST spr round 3 (radius: 5)
+[05:17:42 -193293889.613559] FAST spr round 4 (radius: 5)
+[06:08:50 -193291634.503322] FAST spr round 5 (radius: 5)
+[07:01:26 -193289567.549518] FAST spr round 6 (radius: 5)
+[07:57:07 -193288204.325820] FAST spr round 7 (radius: 5)
+[08:52:44 -193288036.797687] FAST spr round 8 (radius: 5)
+[09:49:27 -193288036.797677] Model parameter optimization (eps = 1.000000)
+[09:53:05 -193288034.657408] SLOW spr round 1 (radius: 5)
+[13:11:16 -193281156.505515] SLOW spr round 2 (radius: 5)
+[16:07:32 -193281156.504225] SLOW spr round 3 (radius: 10)
+[19:04:47 -193281156.504148] SLOW spr round 4 (radius: 15)
+[24:53:55 -193281156.504142] SLOW spr round 5 (radius: 20)
+[28:16:25 -193281156.504141] SLOW spr round 6 (radius: 25)
+[29:21:06 -193281156.504141] Model parameter optimization (eps = 0.100000)
+
+[29:27:08] ML tree search #1, logLikelihood: -193281154.785409
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.700038 (ML),  weights&rates: (0.250000,0.074196) (0.250000,0.363548) (0.250000,0.924883) (0.250000,2.637373) 
+   Base frequencies (ML): 0.314060 0.156432 0.307580 0.221929 
+   Substitution rates (ML): 1.278231 2.584909 0.674173 1.059573 2.889911 1.000000 
+
+
+Final LogLikelihood: -193281154.785409
+
+AIC score: 386563125.570817 / AICc score: 386563125.654262 / BIC score: 386568511.907224
+Free parameters (model + branch lengths): 408
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/scale/4.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/scale/4.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/scale/4.raxml.log
+
+Analysis started: 31-Jan-2023 23:08:18 / finished: 02-Feb-2023 04:35:27
+
+Elapsed time: 106029.049 seconds
+
+Consumed energy: 11739.625 Wh (= 59 km in an electric car, or 293 km with an e-scooter!)
+

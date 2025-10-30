@@ -1,0 +1,99 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 23-Jan-2023 00:09:59 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/47_1X_S21_1e6_1.1 --tree pars{1} --model GTR+G --threads 8 --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1674461399
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/47_1X_S21_1e6_1.1
+[00:00:00] Loaded alignment with 21 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 534866 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 534866
+Gaps: 0.00 %
+Invariant sites: 36.94 %
+
+
+NOTE: Binary MSA file created: data/alignment/47_1X_S21_1e6_1.1.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:02] Generating 1 parsimony starting tree(s) with 21 taxa
+[00:00:02] Data distribution: max. partitions/sites/weight per thread: 1 / 66859 / 1069744
+[00:00:02] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:03 -42789257.074849] Initial branch length optimization
+[00:00:08 -38960172.234651] Model parameter optimization (eps = 10.000000)
+[00:00:47 -37568757.913588] AUTODETECT spr round 1 (radius: 5)
+[00:01:06 -37567139.675615] AUTODETECT spr round 2 (radius: 10)
+[00:01:17 -37567139.675361] SPR radius for FAST iterations: 5 (autodetect)
+[00:01:17 -37567139.675361] Model parameter optimization (eps = 3.000000)
+[00:01:20 -37567139.397627] FAST spr round 1 (radius: 5)
+[00:02:28 -37566120.590230] FAST spr round 2 (radius: 5)
+[00:03:42 -37565158.512179] FAST spr round 3 (radius: 5)
+[00:04:48 -37564662.182432] FAST spr round 4 (radius: 5)
+[00:05:57 -37564436.898767] FAST spr round 5 (radius: 5)
+[00:07:10 -37563991.103064] FAST spr round 6 (radius: 5)
+[00:08:20 -37563991.103020] Model parameter optimization (eps = 1.000000)
+[00:08:24 -37563989.816596] SLOW spr round 1 (radius: 5)
+[00:12:21 -37563989.815864] SLOW spr round 2 (radius: 10)
+[00:13:56 -37563989.815862] SLOW spr round 3 (radius: 15)
+[00:13:58 -37563989.815862] SLOW spr round 4 (radius: 20)
+[00:14:01 -37563989.815862] Model parameter optimization (eps = 0.100000)
+
+[00:14:02] ML tree search #1, logLikelihood: -37563989.808231
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 1.034036 (ML),  weights&rates: (0.250000,0.143695) (0.250000,0.486748) (0.250000,1.005418) (0.250000,2.364139) 
+   Base frequencies (ML): 0.298217 0.248191 0.232587 0.221005 
+   Substitution rates (ML): 0.559968 2.752938 0.444559 1.029381 2.820836 1.000000 
+
+
+Final LogLikelihood: -37563989.808231
+
+AIC score: 75128075.616461 / AICc score: 75128075.617402 / BIC score: 75128720.013988
+Free parameters (model + branch lengths): 48
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/47_1X_S21_1e6_1.1.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/47_1X_S21_1e6_1.1.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/47_1X_S21_1e6_1.1.raxml.log
+
+Analysis started: 23-Jan-2023 00:09:59 / finished: 23-Jan-2023 00:24:02
+
+Elapsed time: 842.915 seconds
+
+Consumed energy: 114.919 Wh
+

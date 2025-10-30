@@ -1,0 +1,97 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 23-Jan-2023 00:09:59 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/36_1X_S21_1e6_1.1 --tree pars{1} --model GTR+G --threads 8 --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1674461399
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/36_1X_S21_1e6_1.1
+[00:00:00] Loaded alignment with 21 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 472202 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 472202
+Gaps: 0.00 %
+Invariant sites: 49.11 %
+
+
+NOTE: Binary MSA file created: data/alignment/36_1X_S21_1e6_1.1.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:02] Generating 1 parsimony starting tree(s) with 21 taxa
+[00:00:02] Data distribution: max. partitions/sites/weight per thread: 1 / 59026 / 944416
+[00:00:02] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:02 -37397978.247519] Initial branch length optimization
+[00:00:06 -33535009.030948] Model parameter optimization (eps = 10.000000)
+[00:00:29 -32684018.726231] AUTODETECT spr round 1 (radius: 5)
+[00:00:46 -32673219.523717] AUTODETECT spr round 2 (radius: 10)
+[00:00:54 -32673219.522723] SPR radius for FAST iterations: 5 (autodetect)
+[00:00:55 -32673219.522723] Model parameter optimization (eps = 3.000000)
+[00:00:58 -32673214.818652] FAST spr round 1 (radius: 5)
+[00:01:50 -32671989.223349] FAST spr round 2 (radius: 5)
+[00:02:45 -32670760.288147] FAST spr round 3 (radius: 5)
+[00:03:40 -32670600.031919] FAST spr round 4 (radius: 5)
+[00:04:34 -32670600.031919] Model parameter optimization (eps = 1.000000)
+[00:04:38 -32670594.585099] SLOW spr round 1 (radius: 5)
+[00:07:56 -32670594.584756] SLOW spr round 2 (radius: 10)
+[00:09:09 -32670594.584754] SLOW spr round 3 (radius: 15)
+[00:09:12 -32670594.584754] SLOW spr round 4 (radius: 20)
+[00:09:14 -32670594.584754] Model parameter optimization (eps = 0.100000)
+
+[00:09:16] ML tree search #1, logLikelihood: -32670594.555924
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.667703 (ML),  weights&rates: (0.250000,0.067308) (0.250000,0.347885) (0.250000,0.912286) (0.250000,2.672522) 
+   Base frequencies (ML): 0.335321 0.217752 0.220672 0.226255 
+   Substitution rates (ML): 3.248057 4.636151 1.364551 2.870448 6.036545 1.000000 
+
+
+Final LogLikelihood: -32670594.555924
+
+AIC score: 65341285.111847 / AICc score: 65341285.112788 / BIC score: 65341929.509374
+Free parameters (model + branch lengths): 48
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/36_1X_S21_1e6_1.1.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/36_1X_S21_1e6_1.1.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/36_1X_S21_1e6_1.1.raxml.log
+
+Analysis started: 23-Jan-2023 00:09:59 / finished: 23-Jan-2023 00:19:16
+
+Elapsed time: 556.290 seconds
+
+Consumed energy: 70.502 Wh
+

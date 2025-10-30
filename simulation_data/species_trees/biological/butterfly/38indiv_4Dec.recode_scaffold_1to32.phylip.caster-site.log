@@ -1,0 +1,34 @@
+Massive-scale Alignment-based Species Tree EstimatoR (Site)
+Version: v1.15.0.0
+#Base: 4257373168
+#Species: 38
+#Rounds: 4
+#Samples: 4
+#Threads: 64
+#NNI moves:1/84
+((((((((((((((hdi_53_,han_12_),hdu_56_),(hbo_47_,hano_31_)),poc_30_),(san_28_,sca_3_)),(((yeapo_17_,ypo_18_),ysa_14_),(((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(ste_24-2_,kcy_65_)))),(((aam_52_,aja_38_),sep_20_),kru_69_)),((ate_1_,pthth_2_),Y_HMFGKCCXY-L5_clean_)),(((M_HMFGKCCXY-L3_clean_,kin_039_),kliam_62_),kpa_57_)),rpo_21_),((hac_34_,hod_15_),(cbe_79_,pcl_9_))),shiga_50_),nxa_25_),hle_29+_);
+#NNI moves:0/84
+((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(ste_24-2_,kcy_65_)),((ypo_18_,yeapo_17_),ysa_14_)),(((((han_12_,hdi_53_),hdu_56_),(hbo_47_,hano_31_)),poc_30_),(san_28_,sca_3_))),((((((hac_34_,hod_15_),(pcl_9_,cbe_79_)),((nxa_25_,hle_29+_),shiga_50_)),rpo_21_),(((M_HMFGKCCXY-L3_clean_,kin_039_),kliam_62_),kpa_57_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_))),kru_69_),sep_20_),aam_52_),aja_38_);
+#NNI moves:0/84
+(((((((((((((cbe_79_,pcl_9_),(hac_34_,hod_15_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_),(((kin_039_,M_HMFGKCCXY-L3_clean_),kliam_62_),kpa_57_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),(((aam_52_,aja_38_),sep_20_),kru_69_)),((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jhe_45_,jat_6_)),(ste_24-2_,kcy_65_)),((yeapo_17_,ypo_18_),ysa_14_))),(san_28_,sca_3_)),poc_30_),((han_12_,hdi_53_),hdu_56_)),hbo_47_),hano_31_);
+#NNI moves:2/84
+((((((((((((((hle_29+_,nxa_25_),shiga_50_),((hod_15_,hac_34_),(pcl_9_,cbe_79_))),rpo_21_),(((kin_039_,M_HMFGKCCXY-L3_clean_),kliam_62_),kpa_57_)),((ate_1_,pthth_2_),Y_HMFGKCCXY-L5_clean_)),(((aja_38_,aam_52_),sep_20_),kru_69_)),((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(kcy_65_,ste_24-2_)),((ypo_18_,yeapo_17_),ysa_14_))),(san_28_,sca_3_)),poc_30_),(hbo_47_,hano_31_)),hdu_56_),hdi_53_),han_12_);
+Initial score: 7.35275e+09
+Initial tree: ((kin_039_,(kliam_62_,(kpa_57_,(((((hle_29+_,nxa_25_),shiga_50_),((hod_15_,hac_34_),(pcl_9_,cbe_79_))),rpo_21_),(((ate_1_,pthth_2_),Y_HMFGKCCXY-L5_clean_),((((aja_38_,aam_52_),sep_20_),kru_69_),(((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(kcy_65_,ste_24-2_)),((ypo_18_,yeapo_17_),ysa_14_)),((san_28_,sca_3_),(poc_30_,((hbo_47_,hano_31_),(hdu_56_,(hdi_53_,han_12_)))))))))))),M_HMFGKCCXY-L3_clean_);
+*** Subsample Process ***
+#NNI moves:0/84
+((((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(kcy_65_,ste_24-2_)),((yeapo_17_,ypo_18_),ysa_14_)),(((((han_12_,hdi_53_),hdu_56_),(hano_31_,hbo_47_)),poc_30_),(sca_3_,san_28_))),(((aja_38_,aam_52_),sep_20_),kru_69_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),((((pcl_9_,cbe_79_),(hod_15_,hac_34_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_)),kpa_57_),kliam_62_),M_HMFGKCCXY-L3_clean_),kin_039_);
+#NNI moves:3/84
+((((((((((((((cbe_79_,pcl_9_),(hac_34_,hod_15_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_),(((kin_039_,M_HMFGKCCXY-L3_clean_),kliam_62_),kpa_57_)),((ate_1_,pthth_2_),Y_HMFGKCCXY-L5_clean_)),(((aja_38_,aam_52_),sep_20_),kru_69_)),(((((han_12_,hdi_53_),hdu_56_),(hbo_47_,hano_31_)),poc_30_),(san_28_,sca_3_))),((ypo_18_,yeapo_17_),ysa_14_)),(kcy_65_,ste_24-2_)),(jat_6_,jhe_45_)),jal_92_),(psl_41_,pwe_43_)),jleja_27+_);
+#NNI moves:0/84
+(((((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jat_6_,jhe_45_)),(ste_24-2_,kcy_65_)),((ypo_18_,yeapo_17_),ysa_14_)),(((((hdi_53_,han_12_),hdu_56_),(hano_31_,hbo_47_)),poc_30_),(sca_3_,san_28_))),(((aam_52_,aja_38_),sep_20_),kru_69_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),(((kin_039_,M_HMFGKCCXY-L3_clean_),kliam_62_),kpa_57_)),rpo_21_),((nxa_25_,hle_29+_),shiga_50_)),(hod_15_,hac_34_)),cbe_79_),pcl_9_);
+#NNI moves:0/84
+((((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jhe_45_,jat_6_)),(ste_24-2_,kcy_65_)),((yeapo_17_,ypo_18_),ysa_14_)),(((((han_12_,hdi_53_),hdu_56_),(hano_31_,hbo_47_)),poc_30_),(sca_3_,san_28_))),(((aja_38_,aam_52_),sep_20_),kru_69_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),((((pcl_9_,cbe_79_),(hac_34_,hod_15_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_)),kpa_57_),kliam_62_),M_HMFGKCCXY-L3_clean_),kin_039_);
+Current score: 7.35275e+09
+Current tree: ((((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jhe_45_,jat_6_)),(ste_24-2_,kcy_65_)),((yeapo_17_,ypo_18_),ysa_14_)),(((((han_12_,hdi_53_),hdu_56_),(hano_31_,hbo_47_)),poc_30_),(sca_3_,san_28_))),(((aja_38_,aam_52_),sep_20_),kru_69_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),((((pcl_9_,cbe_79_),(hac_34_,hod_15_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_)),kpa_57_),kliam_62_),kin_039_),M_HMFGKCCXY-L3_clean_);
+Final Tree: ((((((((((((((psl_41_,pwe_43_),jleja_27+_),jal_92_),(jhe_45_,jat_6_)),(ste_24-2_,kcy_65_)),((yeapo_17_,ypo_18_),ysa_14_)),(((((han_12_,hdi_53_),hdu_56_),(hano_31_,hbo_47_)),poc_30_),(sca_3_,san_28_))),(((aja_38_,aam_52_),sep_20_),kru_69_)),((pthth_2_,ate_1_),Y_HMFGKCCXY-L5_clean_)),((((pcl_9_,cbe_79_),(hac_34_,hod_15_)),((hle_29+_,nxa_25_),shiga_50_)),rpo_21_)),kpa_57_),kliam_62_),kin_039_),M_HMFGKCCXY-L3_clean_);
+Score: 7.35275e+09
+
+real	50m33.502s
+user	2148m54.278s
+sys	2m7.376s

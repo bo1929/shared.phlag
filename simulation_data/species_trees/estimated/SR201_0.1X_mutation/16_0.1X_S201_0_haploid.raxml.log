@@ -1,0 +1,97 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 02-Jan-2023 11:00:48 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/16_0.1X_S201_0_haploid --tree pars{1} --model GTR+G --threads 64
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1672686048
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (64 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: data/alignment/16_0.1X_S201_0_haploid
+[00:00:02] Loaded alignment with 201 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 206798 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 206798
+Gaps: 0.00 %
+Invariant sites: 73.77 %
+
+
+NOTE: Binary MSA file created: data/alignment/16_0.1X_S201_0_haploid.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 64 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:20] Generating 1 parsimony starting tree(s) with 201 taxa
+[00:00:24] Data distribution: max. partitions/sites/weight per thread: 1 / 3232 / 51712
+[00:00:24] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:25 -49993658.490815] Initial branch length optimization
+[00:00:26 -21423821.520048] Model parameter optimization (eps = 10.000000)
+[00:00:28 -20948218.759590] AUTODETECT spr round 1 (radius: 5)
+[00:00:36 -20948218.759590] SPR radius for FAST iterations: 5 (autodetect)
+[00:00:36 -20948218.759590] Model parameter optimization (eps = 3.000000)
+[00:00:36 -20948218.749883] FAST spr round 1 (radius: 5)
+[00:00:44 -20948170.375034] FAST spr round 2 (radius: 5)
+[00:00:52 -20948127.862496] FAST spr round 3 (radius: 5)
+[00:01:00 -20948107.504116] FAST spr round 4 (radius: 5)
+[00:01:08 -20948079.469072] FAST spr round 5 (radius: 5)
+[00:01:17 -20948079.469072] Model parameter optimization (eps = 1.000000)
+[00:01:17 -20948079.436833] SLOW spr round 1 (radius: 5)
+[00:01:49 -20948056.074974] SLOW spr round 2 (radius: 5)
+[00:02:19 -20948056.074974] SLOW spr round 3 (radius: 10)
+[00:02:57 -20948056.074974] SLOW spr round 4 (radius: 15)
+[00:04:00 -20948056.074974] SLOW spr round 5 (radius: 20)
+[00:04:51 -20948056.074974] SLOW spr round 6 (radius: 25)
+[00:05:13 -20948056.074974] Model parameter optimization (eps = 0.100000)
+
+[00:05:13] ML tree search #1, logLikelihood: -20948056.059134
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 1.793492 (ML),  weights&rates: (0.250000,0.267313) (0.250000,0.631089) (0.250000,1.063845) (0.250000,2.037753) 
+   Base frequencies (ML): 0.244179 0.207499 0.275503 0.272818 
+   Substitution rates (ML): 1.663865 3.529675 0.680601 2.862719 7.269604 1.000000 
+
+
+Final LogLikelihood: -20948056.059134
+
+AIC score: 41896928.118268 / AICc score: 41896928.185022 / BIC score: 41902405.497244
+Free parameters (model + branch lengths): 408
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/16_0.1X_S201_0_haploid.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/16_0.1X_S201_0_haploid.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/16_0.1X_S201_0_haploid.raxml.log
+
+Analysis started: 02-Jan-2023 11:00:48 / finished: 02-Jan-2023 11:06:02
+
+Elapsed time: 313.433 seconds
+
+Consumed energy: 37.616 Wh
+

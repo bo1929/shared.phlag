@@ -1,0 +1,96 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 23-Jan-2023 00:10:03 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/38_1X_S21_1e6_1.1 --tree pars{1} --model GTR+G --threads 8 --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1674461403
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/38_1X_S21_1e6_1.1
+[00:00:00] Loaded alignment with 21 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 755916 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 755916
+Gaps: 0.00 %
+Invariant sites: 43.46 %
+
+
+NOTE: Binary MSA file created: data/alignment/38_1X_S21_1e6_1.1.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 8 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:02] Generating 1 parsimony starting tree(s) with 21 taxa
+[00:00:02] Data distribution: max. partitions/sites/weight per thread: 1 / 94490 / 1511840
+[00:00:02] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:02 -43825089.374425] Initial branch length optimization
+[00:00:09 -41020443.815117] Model parameter optimization (eps = 10.000000)
+[00:00:53 -39295365.794248] AUTODETECT spr round 1 (radius: 5)
+[00:01:21 -39266616.334464] AUTODETECT spr round 2 (radius: 10)
+[00:01:35 -39266616.333327] SPR radius for FAST iterations: 5 (autodetect)
+[00:01:35 -39266616.333327] Model parameter optimization (eps = 3.000000)
+[00:01:44 -39266596.617712] FAST spr round 1 (radius: 5)
+[00:03:17 -39264730.102534] FAST spr round 2 (radius: 5)
+[00:04:51 -39264730.101692] Model parameter optimization (eps = 1.000000)
+[00:04:56 -39264729.242677] SLOW spr round 1 (radius: 5)
+[00:10:26 -39264239.577636] SLOW spr round 2 (radius: 5)
+[00:15:38 -39264239.577632] SLOW spr round 3 (radius: 10)
+[00:18:00 -39264239.577632] SLOW spr round 4 (radius: 15)
+[00:18:03 -39264239.577632] SLOW spr round 5 (radius: 20)
+[00:18:06 -39264239.577632] Model parameter optimization (eps = 0.100000)
+
+[00:18:09] ML tree search #1, logLikelihood: -39264239.520642
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.611271 (ML),  weights&rates: (0.250000,0.055441) (0.250000,0.318480) (0.250000,0.886962) (0.250000,2.739118) 
+   Base frequencies (ML): 0.350219 0.238210 0.137520 0.274051 
+   Substitution rates (ML): 1.361682 2.385633 0.466918 1.539886 4.017669 1.000000 
+
+
+Final LogLikelihood: -39264239.520642
+
+AIC score: 78528575.041284 / AICc score: 78528575.042225 / BIC score: 78529219.438811
+Free parameters (model + branch lengths): 48
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/38_1X_S21_1e6_1.1.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/38_1X_S21_1e6_1.1.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/38_1X_S21_1e6_1.1.raxml.log
+
+Analysis started: 23-Jan-2023 00:10:03 / finished: 23-Jan-2023 00:28:12
+
+Elapsed time: 1089.294 seconds
+
+Consumed energy: 102.456 Wh
+

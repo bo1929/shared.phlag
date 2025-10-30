@@ -1,0 +1,8 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Tue Jan 24 01:19:53 2023]
+[!
+>Data file = 21_1X_S21_1e6_1.1.nex
+]
+tree 'PAUP_1' = [&U] (T30,(T170,T60),((T70,T140),(((T130,(T110,((T20,T150),T10))),T200),((((T80,((T180,T40),((T120,T100),T160))),T90),(T50,T190)),T0))));
+End;

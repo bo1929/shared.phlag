@@ -1,0 +1,59 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 25-May-2023 08:55:19 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/13_1X_S21_1e6_1.2 --tree pars{1} --model GTR+G --threads 8 --tree-constraint S21/raxml-2.polytomy --redo
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  topological constraint: S21/raxml-2.polytomy (algorithm: NEW)
+  random seed: 1685030119
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (8 threads), thread pinning: OFF
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
+
+[00:00:00] Reading alignment from file: data/alignment/13_1X_S21_1e6_1.2
+[00:00:00] Loaded alignment with 42 taxa and 5000000 sites
+
+ERROR: Sequences 1 and 2 have identical name: T10
+ERROR: Sequences 3 and 4 have identical name: T100
+ERROR: Sequences 5 and 6 have identical name: T80
+ERROR: Sequences 7 and 8 have identical name: T60
+ERROR: Sequences 9 and 10 have identical name: T180
+ERROR: Sequences 11 and 12 have identical name: T190
+ERROR: Sequences 13 and 14 have identical name: T20
+ERROR: Sequences 15 and 16 have identical name: T140
+ERROR: Sequences 17 and 18 have identical name: T170
+ERROR: Sequences 19 and 20 have identical name: T90
+ERROR: Sequences 21 and 22 have identical name: T130
+ERROR: Sequences 23 and 24 have identical name: T40
+ERROR: Sequences 25 and 26 have identical name: T30
+ERROR: Sequences 27 and 28 have identical name: T110
+ERROR: Sequences 29 and 30 have identical name: T200
+ERROR: Sequences 31 and 32 have identical name: T50
+ERROR: Sequences 33 and 34 have identical name: T150
+ERROR: Sequences 35 and 36 have identical name: T70
+ERROR: Sequences 37 and 38 have identical name: T120
+ERROR: Sequences 39 and 40 have identical name: T160
+ERROR: Sequences 41 and 42 have identical name: T0
+
+ERROR: Duplicate sequence names found: 21
+
+ERROR: Alignment check failed (see details above)!
+

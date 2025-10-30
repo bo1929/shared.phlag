@@ -1,0 +1,95 @@
+
+RAxML-NG v. 1.1.0-master released on 04.08.2022 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD EPYC 7742 64-Core Processor, 128 cores, 251 GB RAM
+
+RAxML-NG was called at 26-Dec-2022 16:51:18 as follows:
+
+/home/chaos/programs/raxml-ng/raxml-ng/bin/raxml-ng --msa data/alignment/12_1X_S201_0_haploid --tree pars{1} --model GTR+G --threads 64
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): parsimony (1)
+  random seed: 1672102278
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (64 threads), thread pinning: OFF
+
+[00:00:00] Reading alignment from file: data/alignment/12_1X_S201_0_haploid
+[00:00:03] Loaded alignment with 201 taxa and 5000000 sites
+
+Alignment comprises 1 partitions and 3893742 patterns
+
+Partition 0: noname
+Model: GTR+FO+G4m
+Alignment sites / patterns: 5000000 / 3893742
+Gaps: 0.00 %
+Invariant sites: 5.01 %
+
+
+NOTE: Binary MSA file created: data/alignment/12_1X_S201_0_haploid.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 64 thread(s)
+
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:23] Generating 1 parsimony starting tree(s) with 201 taxa
+[00:00:50] Data distribution: max. partitions/sites/weight per thread: 1 / 60840 / 973440
+[00:00:50] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:51 -153590771.728944] Initial branch length optimization
+[00:03:12 -139582228.030732] Model parameter optimization (eps = 10.000000)
+[00:07:24 -135476196.064604] AUTODETECT spr round 1 (radius: 5)
+[00:13:26 -135461665.640662] AUTODETECT spr round 2 (radius: 10)
+[00:32:39 -135461665.640298] SPR radius for FAST iterations: 5 (autodetect)
+[00:32:39 -135461665.640298] Model parameter optimization (eps = 3.000000)
+[00:32:55 -135461664.340920] FAST spr round 1 (radius: 5)
+[00:42:57 -135460737.675942] FAST spr round 2 (radius: 5)
+[00:53:06 -135460610.679287] FAST spr round 3 (radius: 5)
+[01:03:55 -135460610.679287] Model parameter optimization (eps = 1.000000)
+[01:04:13 -135460610.317075] SLOW spr round 1 (radius: 5)
+[01:36:55 -135460610.316846] SLOW spr round 2 (radius: 10)
+[02:06:41 -135460610.316846] SLOW spr round 3 (radius: 15)
+[03:10:33 -135460610.316846] SLOW spr round 4 (radius: 20)
+[04:02:06 -135460610.316846] SLOW spr round 5 (radius: 25)
+[04:15:16 -135460610.316846] Model parameter optimization (eps = 0.100000)
+
+[04:15:52] ML tree search #1, logLikelihood: -135460609.950359
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 4.020468 (ML),  weights&rates: (0.250000,0.455483) (0.250000,0.775914) (0.250000,1.084397) (0.250000,1.684206) 
+   Base frequencies (ML): 0.265498 0.210581 0.209412 0.314509 
+   Substitution rates (ML): 1.400206 4.681095 1.351242 2.542771 4.088215 1.000000 
+
+
+Final LogLikelihood: -135460609.950359
+
+AIC score: 270922035.900718 / AICc score: 270922035.967472 / BIC score: 270927513.279694
+Free parameters (model + branch lengths): 408
+
+Best ML tree saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/12_1X_S201_0_haploid.raxml.bestTree
+Optimized model saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/12_1X_S201_0_haploid.raxml.bestModel
+
+Execution log saved to: /expanse/lustre/projects/uot138/chaos/ASTERISK-sim/data/alignment/12_1X_S201_0_haploid.raxml.log
+
+Analysis started: 26-Dec-2022 16:51:18 / finished: 26-Dec-2022 21:07:12
+
+Elapsed time: 15354.276 seconds
+
+Consumed energy: 1748.522 Wh (= 9 km in an electric car, or 44 km with an e-scooter!)
+
