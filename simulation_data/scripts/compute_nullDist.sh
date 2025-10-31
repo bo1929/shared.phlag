@@ -19,7 +19,7 @@ date
 echo "Estimating CU branch lengths and simulating gene trees..."
 # # astral4_coalescent_unit -C -c ${SPECIES_TREE} -i ${GENE_TREES} -o ${TMPDIR}/cu_tree.tree
 # # CUSPECIES_TREE="${TMPDIR}/cu_tree.tree"
-python ../scripts/simulate_gtrees.py -i ${SPECIES_TREE} -g ${GENE_TREES} -n ${NUM_GENES} -o ${OUTDIR} -t ${NUM_THREADS}
+python simulate_gene_trees.py -i ${SPECIES_TREE} -g ${GENE_TREES} -n ${NUM_GENES} -o ${OUTDIR} -t ${NUM_THREADS}
 
 ROOT_ND=$(nw_labels -r ${OUTDIR}/labelled_cu_tree.tree)
 QQS_CMD="astral4 -C -c labelled_cu_tree.tree \

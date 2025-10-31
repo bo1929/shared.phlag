@@ -14,27 +14,27 @@ def count_trees(filepath):
         raise e
 
 
-def simulate_independent_region(default_gtrees, discordant_gtrees, p, density):
+def simulate_independent_region(default_gtrees, discordant_gtrees, p, rate):
     default_gc = count_trees(default_gtrees)
     discordant_gc = count_trees(discordant_gtrees)
     assert default_gc == discordant_gc
     gc = default_gc = discordant_gc
     assert p < 0.5
-    assert density <= 1.0
-    r = p / density
+    assert rate <= 1.0
+    r = p / rate
     assert r < 1.0
     size = int(gc * r)
     dstart = random.randint(1, gc - size)
     dend = dstart + size
-    noncontigous_idx = random.sample(
-        range(dstart, dend), int((1.0 - density) * (dend - dstart))
+    vl = random.sample(
+        range(dstart, dend), int((1.0 - rate) * (dend - dstart))
     )
-    noncontigous_idx.sort()
-    return dstart, dend, noncontigous_idx
+    vl.sort()
+    return dstart, dend, vl
 
 
 def save_event(
-    output_dir, default_gtrees, discordant_gtrees, dstart, dend, noncontigous_idx
+    output_dir, default_gtrees, discordant_gtrees, dstart, dend, vl
 ):
     default_f = open(default_gtrees, "r")
     discordant_f = open(discordant_gtrees, "r")
@@ -46,7 +46,7 @@ def save_event(
 
     with open(output_dir / "emission.gtrees", "w") as f:
         for i, gt in enumerate(default_gtrees_l):
-            if i in noncontigous_idx:
+            if i in vl:
                 gt = default_gtrees_l[i]
             elif i >= dstart and i < dend:
                 gt = discordant_gtrees_l[i]
@@ -61,8 +61,8 @@ def save_event(
         f.write(f"default_gtrees: {default_gtrees}\n")
         f.write(f"discordant_gtrees: {discordant_gtrees}\n")
         f.write(f"p: {(dend - dstart)/float(default_len)}\n")
-        f.write(f"d: {1.0-len(noncontigous_idx)/float(dend-dstart)}\n")
-        f.write(f"noncontigous_idx: {noncontigous_idx}")
+        f.write(f"r: {1.0-len(vl)/float(dend-dstart)}\n")
+        f.write(f"v: {vl}")
 
 
 def main(args):
@@ -70,16 +70,21 @@ def main(args):
     default_gtrees = args.default_gene_trees
     discordant_gtrees = args.discordant_gene_trees
     p = args.discordant_portion
-    d = args.density
+    r = args.rate
 
     os.makedirs(output_dir, exist_ok=True)
     output_dir = Path(output_dir)
 
-    dstart, dend, noncontigous_idx = simulate_independent_region(
-        default_gtrees, discordant_gtrees, p, d
+    dstart, dend, vl = simulate_independent_region(
+        default_gtrees, discordant_gtrees, p, r
     )
     save_event(
-        output_dir, default_gtrees, discordant_gtrees, dstart, dend, noncontigous_idx
+        output_dir,
+        default_gtrees,
+        discordant_gtrees,
+        dstart,
+        dend,
+        vl,
     )
 
 
@@ -107,12 +112,12 @@ if __name__ == "__main__":
         help="Portion of the discordant segment.",
     )
     parser.add_argument(
-        "-d",
-        "--density",
+        "-r",
+        "--rate",
         type=float,
         required=False,
         default=1.0,
-        help="Desired density of the discordant segment.",
+        help="Desired rate of the discordant segment.",
     )
     parser.add_argument("-o", "--output-dir", required=True, help="Output directory.")
     args = parser.parse_args()
