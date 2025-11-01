@@ -64,7 +64,7 @@ def get_labels(info_dict):
     return labels
 
 
-def get_phylter_pred(input_file, info_dict):
+def get_phlag_pred(input_file, info_dict):
     pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     pos = []
     with open(input_file, "r") as f:
@@ -79,7 +79,7 @@ def get_phylter_pred(input_file, info_dict):
     return pred
 
 
-def get_phlag_pred(input_file, info_dict):
+def get_phylter_pred(input_file, info_dict):
     pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     pos = []
     with open(input_file, "r") as f:
@@ -105,9 +105,9 @@ def main(args):
     true = get_labels(info_dict)
 
     if method == "phlag":
-        pred = get_phylter_pred(input_file, info_dict)
+        pred = get_phlag_pred(input_file, info_dict)
     elif method == "phylter":
-        pred = get_phylag_pred(input_file, info_dict)
+        pred = get_phylter_pred(input_file, info_dict)
     else:
         raise ValueError(f"Invalid method: {args.method}")
     tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
