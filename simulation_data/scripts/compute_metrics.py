@@ -69,6 +69,21 @@ def get_phylter_pred(input_file, info_dict):
     pos = []
     with open(input_file, "r") as f:
         for line in f:
+            if line.startswith("#"):
+                continue
+            else:
+                pred = np.array(list(map(lambda x: int(x), line.strip().split(","))), dtype=int)
+                break
+    if len(pos) > 0:
+        pred[pos] = 1
+    return pred
+
+
+def get_phlag_pred(input_file, info_dict):
+    pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
+    pos = []
+    with open(input_file, "r") as f:
+        for line in f:
             if line.startswith("# Outlier gene(s) detected: 1"):
                 pos = list(map(lambda x: int(x)-1, line[28:].split(";")))
             if line.startswith("#"):
@@ -80,31 +95,6 @@ def get_phylter_pred(input_file, info_dict):
     return pred
 
 
-def get_inference_stats(input_file):
-    with open(input_file, "r") as f:
-        for idx, line in enumerate(f):
-            if line.startswith("#"):
-                if idx == 0:
-                    invocation = line[2:]
-                elif idx == 1:
-                    input_tree = ts.read_tree_newick(line[2:])
-                elif idx == 2:
-                    reestimated_tree = ts.read_tree_newick(line[2:])
-                elif idx == 3:
-                    clades_to_blen = eval(line[2:])
-                    clades = list(clades_to_blen.keys())
-                elif idx == 4:
-                    default_emissions = eval(line[15:])
-                elif idx == 5:
-                    outlier_emissions = eval(line[15:])
-                else:
-                    continue
-            else:
-                break
-    d = distance.jensenshannon(default_emissions, outlier_emissions, base=2)
-    return d, negblen
-
-
 def main(args):
     input_file = args.input_file
     info_file = args.info_file
@@ -114,33 +104,28 @@ def main(args):
     info_dict = read_info(info_file)
     true = get_labels(info_dict)
 
-    if method == "gosh":
-        pred = np.loadtxt(input_file, delimiter="\t", comments="#")
-        tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
-        print("TN\tFP\tFN\tTP\tMp\tMr\tMv", file=sys.stderr)
-        print(
-            f"{tn}\t{fp}\t{fn}\t{tp}\t{info_dict['p']}\t{info_dict['r']}\t{np.mean(info_dict['v'])}",
-            end=None,
-            file=sys.stdout,
-        )
-    elif method == "phylter":
+    if method == "phlag":
         pred = get_phylter_pred(input_file, info_dict)
-        tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
-        print("TN\tFP\tFN\tTP\tMp\tMr\tMv", file=sys.stderr)
-        print(
-            f"{tn}\t{fp}\t{fn}\t{tp}\t{info_dict['p']}\t{info_dict['r']}\t{np.mean(info_dict['v'])}",
-            end=None,
-            file=sys.stdout,
-        )
+    elif method == "phylter":
+        pred = get_phylag_pred(input_file, info_dict)
     else:
         raise ValueError(f"Invalid method: {args.method}")
+    tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
+    r = info_dict['r']
+    p = info_dict['p']
+    print("TN\tFP\tFN\tTP\tMp\tMr", file=sys.stderr)
+    print(
+        f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}",
+        end=None,
+        file=sys.stdout,
+    )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-x", "--input-file", type=pathlib.Path, required=True)
     parser.add_argument("-y", "--info-file", type=pathlib.Path, required=True)
-    parser.add_argument("--method", type=str, required=False, choices=["gosh", "phylter"])
+    parser.add_argument("--method", type=str, required=False, choices=["phlag", "phylter"])
     parser.add_argument("--describe", action="store_true", required=False)
     args = parser.parse_args()
     main(args)
