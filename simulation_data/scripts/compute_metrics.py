@@ -60,7 +60,7 @@ def get_labels(info_dict):
     # assert info_dict["p"] < 0.5
     labels = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     labels[info_dict["start"] : info_dict["end"]] = 1
-    labels[info_dict["v"]] = 0
+    # labels[info_dict["v"]] = 0
     return labels
 
 
@@ -70,7 +70,7 @@ def get_phylter_pred(input_file, info_dict):
     with open(input_file, "r") as f:
         for line in f:
             if line.startswith("# Outlier gene(s) detected: 1"):
-                pos = list(map(lambda x: int(x) - 1, line[28:].split(";")))
+                pos = list(map(lambda x: int(x)-1, line[28:].split(";")))
             if line.startswith("#"):
                 continue
             else:
@@ -101,12 +101,6 @@ def get_inference_stats(input_file):
                     continue
             else:
                 break
-    negblen = sum(
-        [
-            1 if blen <= 0 else 0
-            for blen in reestimated_tree.branch_lengths(terminal=False, internal=True)
-        ]
-    )
     d = distance.jensenshannon(default_emissions, outlier_emissions, base=2)
     return d, negblen
 
@@ -123,10 +117,9 @@ def main(args):
     if method == "gosh":
         pred = np.loadtxt(input_file, delimiter="\t", comments="#")
         tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
-        d, negblen = get_inference_stats(input_file)
-        print("TN\tFP\tFN\tTP\tMp\tMr\tMv\tDjs\tCnb", file=sys.stderr)
+        print("TN\tFP\tFN\tTP\tMp\tMr\tMv", file=sys.stderr)
         print(
-            f"{tn}\t{fp}\t{fn}\t{tp}\t{info_dict['p']}\t{info_dict['r']}\t{np.mean(info_dict['v'])}\t{d:.4f}\t{negblen}",
+            f"{tn}\t{fp}\t{fn}\t{tp}\t{info_dict['p']}\t{info_dict['r']}\t{np.mean(info_dict['v'])}",
             end=None,
             file=sys.stdout,
         )
@@ -147,9 +140,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-x", "--input-file", type=pathlib.Path, required=True)
     parser.add_argument("-y", "--info-file", type=pathlib.Path, required=True)
-    parser.add_argument(
-        "--method", type=str, required=False, choices=["gosh", "phylter"]
-    )
+    parser.add_argument("--method", type=str, required=False, choices=["gosh", "phylter"])
     parser.add_argument("--describe", action="store_true", required=False)
     args = parser.parse_args()
     main(args)
