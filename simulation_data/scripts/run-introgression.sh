@@ -35,7 +35,7 @@ run_introgression_cases_controlled () {
       b_lbl="${b//./}"
       TMPDIR=$(mktemp -d -u -p ${OUTPUT_DIR} p${p_lbl}-b${b_lbl}-XXXXX)
       echo ${TMPDIR}
-      exec < ../simulated_events/introgression/selected-difficult/introgression_selected_$1.tsv || exit 1a
+      exec < ../simulated_events/introgression/selected-controlled/introgression_selected_$1.tsv || exit 1a
       while IFS='	' read -r recipient donor v1 v2; do
         python simulate_introgression.py \
           -s ../species_trees/estimated/SR201_default_condition/$1_1X_S201_0_haploid.caster-pair \

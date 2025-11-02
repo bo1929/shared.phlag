@@ -56,11 +56,16 @@ def read_info(info_file):
     return info_dict
 
 
-def get_labels(info_dict):
+def get_labels(info_dict, stype):
     # assert info_dict["p"] < 0.5
     labels = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
-    labels[info_dict["start"] : info_dict["end"]] = 1
-    # labels[info_dict["v"]] = 0
+    if stype:
+        for i in range(len(info_dict["start"])):
+            labels[info_dict["start"][i] : info_dict["end"][i]] = 1
+            # labels[info_dict["v"]] = 0
+    else:
+        labels[info_dict["start"] : info_dict["end"]] = 1
+        # labels[info_dict["v"]] = 0
     return labels
 
 
@@ -98,11 +103,12 @@ def get_phylter_pred(input_file, info_dict):
 def main(args):
     input_file = args.input_file
     info_file = args.info_file
-    describe = args.describe
+    stype = args.stype
+    revert = args.revert
     method = args.method
 
     info_dict = read_info(info_file)
-    true = get_labels(info_dict)
+    true = get_labels(info_dict, stype)
 
     if method == "phlag":
         pred = get_phlag_pred(input_file, info_dict)
@@ -110,15 +116,33 @@ def main(args):
         pred = get_phylter_pred(input_file, info_dict)
     else:
         raise ValueError(f"Invalid method: {args.method}")
+    if revert:
+        if (np.sum(pred) > (pred.shape[0]/2)):
+            pred = 1 - pred
+            pred = pred.astype(int)
     tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
-    r = info_dict['r']
-    p = info_dict['p']
-    print("TN\tFP\tFN\tTP\tMp\tMr", file=sys.stderr)
-    print(
-        f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}",
-        end=None,
-        file=sys.stdout,
-    )
+    if stype:
+        # r = info_dict.get('b', 0)
+        b = len(info_dict["end"])
+        p = info_dict['p']
+        D = info_dict['donor']
+        R = info_dict['recipient']
+        ST = info_dict['gene_trees'].split("/")[-1].split("_")[0]
+        print("TN\tFP\tFN\tTP\tMp\tMb\tD\tR\tST", file=sys.stderr)
+        print(
+            f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{b}\t{D}\t{R}\t{ST}",
+            end=None,
+            file=sys.stdout,
+        )
+    else:
+        r = info_dict.get('r', 0)
+        p = info_dict['p']
+        print("TN\tFP\tFN\tTP\tMp\tMr", file=sys.stderr)
+        print(
+            f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}",
+            end=None,
+            file=sys.stdout,
+        )
 
 
 if __name__ == "__main__":
@@ -126,6 +150,7 @@ if __name__ == "__main__":
     parser.add_argument("-x", "--input-file", type=pathlib.Path, required=True)
     parser.add_argument("-y", "--info-file", type=pathlib.Path, required=True)
     parser.add_argument("--method", type=str, required=False, choices=["phlag", "phylter"])
-    parser.add_argument("--describe", action="store_true", required=False)
+    parser.add_argument("--stype", action="store_true", required=False)
+    parser.add_argument("--revert", action="store_true", required=False)
     args = parser.parse_args()
     main(args)
