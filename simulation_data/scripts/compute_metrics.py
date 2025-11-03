@@ -5,6 +5,7 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 import treeswift as ts
 from scipy.spatial import distance
+from collections import defaultdict
 
 
 DEFAULT_GC = 2000
@@ -69,7 +70,7 @@ def get_labels(info_dict, stype):
     return labels
 
 
-def get_phlag_pred(input_file, info_dict):
+def get_phlag_pred(input_file, info_dict, stype, alt):
     pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     pos = []
     with open(input_file, "r") as f:
@@ -78,13 +79,17 @@ def get_phlag_pred(input_file, info_dict):
                 continue
             else:
                 pred = np.array(list(map(lambda x: int(x), line.strip().split(","))), dtype=int)
-                break
+                if alt:
+                    pass
+                else:
+                    break
     if len(pos) > 0:
         pred[pos] = 1
     return pred
 
 
-def get_phylter_pred(input_file, info_dict):
+def get_phylter_pred(input_file, info_dict, stype):
+    a_dict = defaultdict(list)
     pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     pos = []
     with open(input_file, "r") as f:
@@ -94,9 +99,23 @@ def get_phylter_pred(input_file, info_dict):
             if line.startswith("#"):
                 continue
             else:
-                break
-    if len(pos) > 0:
-        pred[pos] = 1
+                if stype:
+                    o = line.strip().split("\t")
+                    g = o[0]
+                    s = o[1]
+                    a_dict[s].append(int(g)-1)
+                else:
+                    break
+    if stype:
+        donor_pos = a_dict.get(info_dict['donor'], [])
+        recipient_pos = a_dict.get(info_dict['recipient'], [])
+        if donor_pos:
+            pred[donor_pos] = 1
+        if recipient_pos:
+            pred[recipient_pos] = 1
+    else:
+        if len(pos) > 0:
+            pred[pos] = 1
     return pred
 
 
@@ -106,14 +125,15 @@ def main(args):
     stype = args.stype
     revert = args.revert
     method = args.method
+    alt = args.alt
 
     info_dict = read_info(info_file)
     true = get_labels(info_dict, stype)
 
     if method == "phlag":
-        pred = get_phlag_pred(input_file, info_dict)
+        pred = get_phlag_pred(input_file, info_dict, stype, alt)
     elif method == "phylter":
-        pred = get_phylter_pred(input_file, info_dict)
+        pred = get_phylter_pred(input_file, info_dict, stype)
     else:
         raise ValueError(f"Invalid method: {args.method}")
     if revert:
@@ -151,6 +171,7 @@ if __name__ == "__main__":
     parser.add_argument("-y", "--info-file", type=pathlib.Path, required=True)
     parser.add_argument("--method", type=str, required=False, choices=["phlag", "phylter"])
     parser.add_argument("--stype", action="store_true", required=False)
+    parser.add_argument("--alt", action="store_true", required=False)
     parser.add_argument("--revert", action="store_true", required=False)
     args = parser.parse_args()
     main(args)

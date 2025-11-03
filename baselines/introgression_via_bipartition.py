@@ -139,7 +139,6 @@ class IntrogressionViaBipartition:
             selected_clades = [label for label in selected_clades if label is not None]
         return selected_clades
 
-
 def parse_arguments():
     parser = argparse.ArgumentParser(description="IntrogressionViaBipartition")
     parser.add_argument("-s", "--species-tree", type=pathlib.Path, required=True, help="Path to species tree in Newick format")
