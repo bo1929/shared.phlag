@@ -52,7 +52,7 @@ def label_tree(tree):
     return tree
 
 
-class IntrogressionViaBipartition:
+class SegmentationViaBipartition:
     def __init__(self, args):
         self.args = args
         self.output_file = self.args.output_file
@@ -139,8 +139,9 @@ class IntrogressionViaBipartition:
             selected_clades = [label for label in selected_clades if label is not None]
         return selected_clades
 
+
 def parse_arguments():
-    parser = argparse.ArgumentParser(description="IntrogressionViaBipartition")
+    parser = argparse.ArgumentParser(description="SegmentationViaBipartition")
     parser.add_argument("-s", "--species-tree", type=pathlib.Path, required=True, help="Path to species tree in Newick format")
     parser.add_argument("-g", "--gene-trees", type=pathlib.Path, required=True, help="Path to file for ordered gene trees (one Newick tree per line)")
     parser.add_argument("-c", "--clade-label", type=str, required=False, default="", help="Specific clade labels to analyze (auto-selected if not provided)")
@@ -151,8 +152,8 @@ def parse_arguments():
 
 def main():
     args = parse_arguments()
-    ivb = IntrogressionViaBipartition(args)
-    # ivb.run()
+    svb = SegmentationViaBipartition(args)
+    # svb.run()
 
 
 if __name__ == "__main__":
