@@ -17,8 +17,8 @@ def count_trees(filepath):
 def simulate_independent_region(default_gtrees, discordant_gtrees, p, rate):
     default_gc = count_trees(default_gtrees)
     discordant_gc = count_trees(discordant_gtrees)
-    assert default_gc == discordant_gc
-    gc = default_gc = discordant_gc
+    # assert default_gc == discordant_gc
+    gc = default_gc # = discordant_gc
     assert p < 0.5
     assert rate <= 1.0
     r = p / rate
@@ -42,14 +42,15 @@ def save_event(
     discordant_gtrees_l = discordant_f.readlines()
     default_len = len(default_gtrees_l)
     discordant_len = len(discordant_gtrees_l)
-    assert default_len == discordant_len
+    # assert default_len == discordant_len
+    assert discordant_len > (dend - dstart)
 
     with open(output_dir / "emission.gtrees", "w") as f:
         for i, gt in enumerate(default_gtrees_l):
             if i in vl:
                 gt = default_gtrees_l[i]
             elif i >= dstart and i < dend:
-                gt = discordant_gtrees_l[i]
+                gt = discordant_gtrees_l[i - dstart]
             f.write(gt)
 
     default_f.close()
