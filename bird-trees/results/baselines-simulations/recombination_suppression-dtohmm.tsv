@@ -1,54 +1,54 @@
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d1052388_t7191688	796	629	33	42	0.05	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d1052388_t7023306	841	629	15	15	0.02	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d1052388_t7191688	682	518	156	144	0.2	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d420955_t7023306	714	561	119	106	0.15	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d1052388_t7507405	606	519	187	188	0.25	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d1052388_t7191688	764	586	74	76	0.1	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d1052388_t7507405	827	643	18	12	0.02	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d1052388_t7191688	638	487	201	174	0.25	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d420955_t7023306	662	538	164	136	0.2	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d210477_t7507405	727	548	128	97	0.15	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d210477_t7507405	607	518	192	183	0.25	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d420955_t7507405	819	606	43	32	0.05	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d420955_t7191688	727	548	130	95	0.15	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d1052388_t7023306	818	607	36	39	0.05	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d210477_t7191688	839	631	17	13	0.02	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d210477_t7191688	638	487	196	179	0.25	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d420955_t7023306	825	645	13	17	0.02	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d210477_t7507405	841	629	18	12	0.02	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d1052388_t7191688	729	546	115	110	0.15	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d210477_t7023306	650	475	194	181	0.25	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d1052388_t7023306	657	543	148	152	0.2	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d210477_t7023306	660	540	147	153	0.2	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d420955_t7023306	624	501	199	176	0.25	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d210477_t7507405	763	587	80	70	0.1	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d1052388_t7191688	831	639	15	15	0.02	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d1052388_t7507405	712	638	74	76	0.1	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d420955_t7023306	791	559	79	71	0.1	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d420955_t7507405	691	584	121	104	0.15	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d420955_t7507405	831	639	14	16	0.02	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d1052388_t7507405	685	590	111	114	0.15	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d420955_t7191688	838	632	14	16	0.02	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d210477_t7023306	772	578	77	73	0.1	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d420955_t7023306	812	613	37	38	0.05	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d1052388_t7023306	555	570	199	176	0.25	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d420955_t7191688	606	594	146	154	0.2	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d210477_t7507405	749	676	39	36	0.05	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d420955_t7507405	734	616	82	68	0.1	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d1052388_t7507405	808	617	42	33	0.05	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d1052388_t7023306	717	558	120	105	0.15	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d420955_t7507405	647	478	204	171	0.25	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d210477_t7023306	663	612	106	119	0.15	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d210477_t7023306	827	598	36	39	0.05	1.0
-./recombination_suppression/p025-anomaly_case-rs_neoaves_d420955_t7191688	596	529	218	157	0.25	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d210477_t7191688	782	643	42	33	0.05	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d420955_t7191688	768	582	90	60	0.1	1.0
-./recombination_suppression/p015-anomaly_case-rs_neoaves_d210477_t7191688	648	627	119	106	0.15	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d1052388_t7023306	689	661	62	88	0.1	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d210477_t7191688	655	545	179	121	0.2	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d420955_t7507405	657	543	161	139	0.2	1.0
-./recombination_suppression/p010-anomaly_case-rs_neoaves_d210477_t7191688	722	628	83	67	0.1	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d210477_t7507405	688	512	165	135	0.2	1.0
-./recombination_suppression/p005-anomaly_case-rs_neoaves_d420955_t7191688	833	592	41	34	0.05	1.0
-./recombination_suppression/p002-anomaly_case-rs_neoaves_d210477_t7023306	834	636	16	14	0.02	1.0
-./recombination_suppression/p020-anomaly_case-rs_neoaves_d1052388_t7507405	593	607	158	142	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	796	629	33	42	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	841	629	15	15	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	682	518	156	144	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	714	561	119	106	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	606	519	187	188	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	764	586	74	76	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	827	643	18	12	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	638	487	201	174	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	662	538	164	136	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	727	548	128	97	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	607	518	192	183	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	819	606	43	32	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	727	548	130	95	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	818	607	36	39	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	839	631	17	13	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	638	487	196	179	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	825	645	13	17	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	841	629	18	12	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	729	546	115	110	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	650	475	194	181	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	657	543	148	152	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	660	540	147	153	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	624	501	199	176	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	763	587	80	70	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7191688	831	639	15	15	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	712	638	74	76	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	791	559	79	71	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	691	584	121	104	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	831	639	14	16	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	685	590	111	114	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	838	632	14	16	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	772	578	77	73	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7023306	812	613	37	38	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	555	570	199	176	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	606	594	146	154	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	749	676	39	36	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	734	616	82	68	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	808	617	42	33	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	717	558	120	105	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	647	478	204	171	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	663	612	106	119	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	827	598	36	39	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	596	529	218	157	0.25	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	782	643	42	33	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	768	582	90	60	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	648	627	119	106	0.15	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7023306	689	661	62	88	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	655	545	179	121	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7507405	657	543	161	139	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7191688	722	628	83	67	0.1	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7507405	688	512	165	135	0.2	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d420955_t7191688	833	592	41	34	0.05	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d210477_t7023306	834	636	16	14	0.02	1.0
+TopologyOrder+HMM	recombination_suppression	rs_neoaves_d1052388_t7507405	593	607	158	142	0.2	1.0
