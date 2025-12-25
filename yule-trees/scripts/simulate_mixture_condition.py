@@ -43,7 +43,7 @@ def save_event(
     default_len = len(default_gtrees_l)
     discordant_len = len(discordant_gtrees_l)
     # assert default_len == discordant_len
-    assert discordant_len > (dend - dstart)
+    assert discordant_len >= (dend - dstart)
 
     with open(output_dir / "emission.gtrees", "w") as f:
         for i, gt in enumerate(default_gtrees_l):

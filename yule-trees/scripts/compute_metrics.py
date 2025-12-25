@@ -8,7 +8,7 @@ from scipy.spatial import distance
 from collections import defaultdict
 
 
-DEFAULT_GC = 2000
+DEFAULT_GC = 1500
 
 
 def is_float(val):
