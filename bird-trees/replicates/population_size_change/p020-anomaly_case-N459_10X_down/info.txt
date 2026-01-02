@@ -1,0 +1,8 @@
+type: single_independent
+start: 1037
+end: 1337
+default_gtrees: ../inferred_genetrees/concat-default.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-N459_10X_down.gtrees
+p: 0.2
+r: 1.0
+v: []

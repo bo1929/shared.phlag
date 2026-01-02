@@ -1,0 +1,8 @@
+type: single_independent
+start: 1221
+end: 1371
+default_gtrees: ../inferred_genetrees/concat-default.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-N679_10X_up.gtrees
+p: 0.1
+r: 1.0
+v: []
