@@ -1,0 +1,8 @@
+type: single_independent
+start: 488
+end: 788
+default_gtrees: ../inferred_genetrees/concat-default.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-recombination_increase-N690.gtrees
+p: 0.2
+r: 1.0
+v: []

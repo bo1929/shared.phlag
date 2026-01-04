@@ -1,0 +1,8 @@
+type: single_independent
+start: 847
+end: 922
+default_gtrees: ../inferred_genetrees/concat-favian.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-recombination_increase-N71.gtrees
+p: 0.05
+r: 1.0
+v: []

@@ -1,0 +1,8 @@
+type: single_independent
+start: 1015
+end: 1240
+default_gtrees: ../inferred_genetrees/concat-favian.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-recombination_suppression-N71.gtrees
+p: 0.15
+r: 1.0
+v: []

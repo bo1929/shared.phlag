@@ -1,0 +1,8 @@
+type: single_independent
+start: 943
+end: 1318
+default_gtrees: ../inferred_genetrees/concat-default.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-recombination_suppression-N499.gtrees
+p: 0.25
+r: 1.0
+v: []

@@ -1,0 +1,8 @@
+type: single_independent
+start: 132
+end: 207
+default_gtrees: ../inferred_genetrees/concat-default.gtrees
+discordant_gtrees: ../inferred_genetrees/concat-anomaly_case-recombination_suppression-N533.gtrees
+p: 0.05
+r: 1.0
+v: []
