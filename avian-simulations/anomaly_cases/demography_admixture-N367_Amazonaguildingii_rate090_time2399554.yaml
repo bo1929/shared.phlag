@@ -1,0 +1,2611 @@
+time_units: generations
+generation_time: 1
+demes:
+- name: N722
+  epochs:
+  - {end_time: 8217104.878048783, start_size: 189487.03936287703}
+- name: N76
+  ancestors: [N722]
+  epochs:
+  - {end_time: 6578262.195121953, start_size: 223840.86709900305}
+- name: N721
+  ancestors: [N722]
+  epochs:
+  - {end_time: 8104353.658536588, start_size: 1786244.0311384324}
+- name: N119
+  ancestors: [N721]
+  epochs:
+  - {end_time: 7913773.17073171, start_size: 2660219.782848996}
+- name: N720
+  ancestors: [N721]
+  epochs:
+  - {end_time: 8028910.975609759, start_size: 1125186.6934950603}
+- name: N276
+  ancestors: [N720]
+  epochs:
+  - {end_time: 7956365.853658539, start_size: 2763545.462929643}
+- name: N719
+  ancestors: [N720]
+  epochs:
+  - {end_time: 7782119.512195124, start_size: 132633.00609151833}
+- name: N192
+  ancestors: [N276]
+  epochs:
+  - {end_time: 7884767.073170735, start_size: 4816737.380819322}
+- name: N275
+  ancestors: [N276]
+  epochs:
+  - {end_time: 7780762.195121954, start_size: 6729367.538550196}
+- name: N93
+  ancestors: [N119]
+  epochs:
+  - {end_time: 7881482.926829271, start_size: 430241.5390939204}
+- name: N118
+  ancestors: [N119]
+  epochs:
+  - {end_time: 7844679.268292686, start_size: 388112.31586519664}
+- name: Opisthocomus_hoazin
+  ancestors: [N192]
+  epochs:
+  - {end_time: 0, start_size: 4816737.380819322}
+- name: N191
+  ancestors: [N192]
+  epochs:
+  - {end_time: 7864804.878048783, start_size: 452808.9030782251}
+- name: N83
+  ancestors: [N93]
+  epochs:
+  - {end_time: 7580902.4390243925, start_size: 333813.2743969342}
+- name: Columbiformes
+  ancestors: [N93]
+  epochs:
+  - {end_time: 2893209.7560975626, start_size: 281699.56468392885}
+- name: Gruiformes
+  ancestors: [N191]
+  epochs:
+  - {end_time: 6909498.7804878075, start_size: 86114.02361038596}
+- name: Charadriiformes
+  ancestors: [N191]
+  epochs:
+  - {end_time: 6721508.536585368, start_size: 109242.39139307466}
+- name: Musophagiformes
+  ancestors: [N118]
+  epochs:
+  - {end_time: 3091896.341463417, start_size: 288312.654123582}
+- name: N117
+  ancestors: [N118]
+  epochs:
+  - {end_time: 7718431.707317076, start_size: 2477215.940318118}
+- name: N351
+  ancestors: [N719]
+  epochs:
+  - {end_time: 7761386.585365856, start_size: 161705.5001682511}
+- name: N718
+  ancestors: [N719]
+  epochs:
+  - {end_time: 7699136.585365856, start_size: 240209.65945758193}
+- name: N215
+  ancestors: [N275]
+  epochs:
+  - {end_time: 7591526.829268295, start_size: 130227.1479847512}
+- name: N274
+  ancestors: [N275]
+  epochs:
+  - {end_time: 7740047.560975612, start_size: 541346.4937441882}
+- name: N299
+  ancestors: [N351]
+  epochs:
+  - {end_time: 7728512.195121954, start_size: 556381.7983320468}
+- name: N350
+  ancestors: [N351]
+  epochs:
+  - {end_time: 7745512.195121954, start_size: 211383.73531228592}
+- name: Coliiformes
+  ancestors: [N350]
+  epochs:
+  - {end_time: 2594771.951219515, start_size: 252229.12638038106}
+- name: N349
+  ancestors: [N350]
+  epochs:
+  - {end_time: 7666098.7804878075, start_size: 127604.04426919576}
+- name: N220
+  ancestors: [N274]
+  epochs:
+  - {end_time: 7275323.17073171, start_size: 564053.844535838}
+- name: N273
+  ancestors: [N274]
+  epochs:
+  - {end_time: 7594217.073170735, start_size: 165059.75699732042}
+- name: Strigiformes
+  ancestors: [N299]
+  epochs:
+  - {end_time: 6783003.658536588, start_size: 204426.53557279796}
+- name: Accipitriformes
+  ancestors: [N299]
+  epochs:
+  - {end_time: 7582539.024390247, start_size: 232713.38390186036}
+- name: Otidiformes
+  ancestors: [N117]
+  epochs:
+  - {end_time: 1929524.3902439047, start_size: 310552.57751218835}
+- name: Cuculiformes
+  ancestors: [N117]
+  epochs:
+  - {end_time: 5886852.4390243925, start_size: 110415.08349497391}
+- name: Cariamiformes
+  ancestors: [N718]
+  epochs:
+  - {end_time: 940758.5365853673, start_size: 348995.6732672604}
+- name: N717
+  ancestors: [N718]
+  epochs:
+  - {end_time: 7629978.048780491, start_size: 190700.18040203454}
+- name: Leptosomus_discolor
+  ancestors: [N349]
+  epochs:
+  - {end_time: 0, start_size: 127604.04426919576}
+- name: N348
+  ancestors: [N349]
+  epochs:
+  - {end_time: 7598969.512195124, start_size: 187476.6464231298}
+- name: Falconiformes
+  ancestors: [N717]
+  epochs:
+  - {end_time: 3899082.92682927, start_size: 227313.2047349918}
+- name: N716
+  ancestors: [N717]
+  epochs:
+  - {end_time: 7525642.682926832, start_size: 442663.67637742916}
+- name: Trogoniformes
+  ancestors: [N348]
+  epochs:
+  - {end_time: 2511943.902439026, start_size: 255211.28578797702}
+- name: N347
+  ancestors: [N348]
+  epochs:
+  - {end_time: 7468126.829268295, start_size: 87563.20383357785}
+- name: Gavia_stellata
+  ancestors: [N273]
+  epochs:
+  - {end_time: 0, start_size: 165059.75699732042}
+- name: N272
+  ancestors: [N273]
+  epochs:
+  - {end_time: 7477840.243902441, start_size: 117276.24972226241}
+- name: Caprimulgidae
+  ancestors: [N215]
+  epochs:
+  - {end_time: 3159653.658536587, start_size: 270347.8204597422}
+- name: N214
+  ancestors: [N215]
+  epochs:
+  - {end_time: 7511086.585365856, start_size: 362460.4226488884}
+- name: Cathartes_aura
+  ancestors: [Accipitriformes]
+  epochs:
+  - {end_time: 0, start_size: 232713.38390186036}
+- name: N297
+  ancestors: [Accipitriformes]
+  epochs:
+  - {end_time: 6596063.414634149, start_size: 139218.2153435968}
+- name: Mesitornis_unicolor
+  ancestors: [N83]
+  epochs:
+  - {end_time: 0, start_size: 333813.2743969342}
+- name: Pterocliformes
+  ancestors: [N83]
+  epochs:
+  - {end_time: 1928113.4146341477, start_size: 273893.7776658496}
+- name: Psittaciformes
+  ancestors: [N716]
+  epochs:
+  - {end_time: 4299042.682926832, start_size: 164648.55494497158}
+- name: Passeriformes
+  ancestors: [N716]
+  epochs:
+  - {end_time: 6183723.17073171, start_size: 78925.58000817076}
+- name: N202
+  ancestors: [N214]
+  epochs:
+  - {end_time: 7380868.292682929, start_size: 3559846.5905017755}
+- name: Caprimulgiformes1
+  ancestors: [N214]
+  epochs:
+  - {end_time: 7401715.853658539, start_size: 390880.55542265926}
+- name: N238
+  ancestors: [N272]
+  epochs:
+  - {end_time: 7396291.463414636, start_size: 306412.32650622184}
+- name: Pelecaniformes
+  ancestors: [N272]
+  epochs:
+  - {end_time: 7402350.000000003, start_size: 182718.69740448985}
+- name: Bucerotiformes
+  ancestors: [N347]
+  epochs:
+  - {end_time: 6748206.097560978, start_size: 186191.81802924795}
+- name: N346
+  ancestors: [N347]
+  epochs:
+  - {end_time: 7302732.926829271, start_size: 99813.31634413525}
+- name: Ciconia_maguari
+  ancestors: [Pelecaniformes]
+  epochs:
+  - {end_time: 0, start_size: 182718.69740448985}
+- name: N270
+  ancestors: [Pelecaniformes]
+  epochs:
+  - {end_time: 7283429.268292686, start_size: 133650.43971754008}
+- name: Podargus_strigoides
+  ancestors: [Caprimulgiformes1]
+  epochs:
+  - {end_time: 0, start_size: 390880.55542265926}
+- name: N212
+  ancestors: [Caprimulgiformes1]
+  epochs:
+  - {end_time: 7078936.585365856, start_size: 71336.04103328328}
+- name: Sphenisciformes
+  ancestors: [N238]
+  epochs:
+  - {end_time: 1748797.5609756112, start_size: 307435.6561812592}
+- name: Procellariiformes
+  ancestors: [N238]
+  epochs:
+  - {end_time: 6644534.146341465, start_size: 140798.99488541772}
+- name: Steatornis_caripensis
+  ancestors: [N202]
+  epochs:
+  - {end_time: 0, start_size: 3559846.5905017755}
+- name: Nyctibiidae
+  ancestors: [N202]
+  epochs:
+  - {end_time: 2637948.7804878075, start_size: 320345.0096406121}
+- name: Coraciiformes
+  ancestors: [N346]
+  epochs:
+  - {end_time: 6853269.512195124, start_size: 47727.80917240804}
+- name: Piciformes
+  ancestors: [N346]
+  epochs:
+  - {end_time: 6785004.878048783, start_size: 136782.3183531881}
+- name: N252
+  ancestors: [N270]
+  epochs:
+  - {end_time: 7156052.4390243925, start_size: 174233.97951770353}
+- name: N269
+  ancestors: [N270]
+  epochs:
+  - {end_time: 6593120.73170732, start_size: 189284.72667343784}
+- name: Phaethon_lepturus
+  ancestors: [N220]
+  epochs:
+  - {end_time: 0, start_size: 564053.844535838}
+- name: Eurypygiformes
+  ancestors: [N220]
+  epochs:
+  - {end_time: 3849275.609756099, start_size: 189165.98270194913}
+- name: N242
+  ancestors: [N252]
+  epochs:
+  - {end_time: 3662932.92682927, start_size: 290265.00428740314}
+- name: N251
+  ancestors: [N252]
+  epochs:
+  - {end_time: 7042773.17073171, start_size: 460592.0755913214}
+- name: Aegotheles_bennettii
+  ancestors: [N212]
+  epochs:
+  - {end_time: 0, start_size: 71336.04103328328}
+- name: N211
+  ancestors: [N212]
+  epochs:
+  - {end_time: 6711258.536585368, start_size: 44187.674430007726}
+- name: N245
+  ancestors: [N251]
+  epochs:
+  - {end_time: 4160973.17073171, start_size: 153485.17689586972}
+- name: N250
+  ancestors: [N251]
+  epochs:
+  - {end_time: 4639468.292682929, start_size: 276112.6355614941}
+- name: N125
+  ancestors: [Gruiformes]
+  epochs:
+  - {end_time: 4943574.390243905, start_size: 128117.7695461439}
+- name: N132
+  ancestors: [Gruiformes]
+  epochs:
+  - {end_time: 6351098.7804878075, start_size: 103655.80412405146}
+- name: N318
+  ancestors: [Coraciiformes]
+  epochs:
+  - {end_time: 6668671.951219514, start_size: 75846.23669782364}
+- name: N327
+  ancestors: [Coraciiformes]
+  epochs:
+  - {end_time: 6004840.243902441, start_size: 93013.77512736715}
+- name: N331
+  ancestors: [Piciformes]
+  epochs:
+  - {end_time: 5113774.390243905, start_size: 150662.88015746974}
+- name: N344
+  ancestors: [Piciformes]
+  epochs:
+  - {end_time: 4660412.195121953, start_size: 111459.3242083964}
+- name: Tyto_alba
+  ancestors: [Strigiformes]
+  epochs:
+  - {end_time: 0, start_size: 204426.53557279796}
+- name: N282
+  ancestors: [Strigiformes]
+  epochs:
+  - {end_time: 2072647.5609756112, start_size: 304702.7550130818}
+- name: N309
+  ancestors: [Bucerotiformes]
+  epochs:
+  - {end_time: 2945813.4146341477, start_size: 228859.65923567693}
+- name: N312
+  ancestors: [Bucerotiformes]
+  epochs:
+  - {end_time: 3866145.1219512215, start_size: 156976.8741500619}
+- name: N146
+  ancestors: [Charadriiformes]
+  epochs:
+  - {end_time: 6248510.975609759, start_size: 82121.4236658139}
+- name: N189
+  ancestors: [Charadriiformes]
+  epochs:
+  - {end_time: 6181846.341463417, start_size: 67992.29104836893}
+- name: N207
+  ancestors: [N211]
+  epochs:
+  - {end_time: 6165691.463414636, start_size: 31770.818417595077}
+- name: N210
+  ancestors: [N211]
+  epochs:
+  - {end_time: 2168547.560975611, start_size: 256052.11828053158}
+- name: Merops_nubicus
+  ancestors: [N318]
+  epochs:
+  - {end_time: 0, start_size: 75846.23669782364}
+- name: N317
+  ancestors: [N318]
+  epochs:
+  - {end_time: 4635191.463414636, start_size: 154921.1195966963}
+- name: Thalassarche_chlororhynchos
+  ancestors: [Procellariiformes]
+  epochs:
+  - {end_time: 0, start_size: 140798.99488541772}
+- name: N236
+  ancestors: [Procellariiformes]
+  epochs:
+  - {end_time: 6434189.024390247, start_size: 103983.39316153919}
+- name: Sagittarius_serpentarius
+  ancestors: [N297]
+  epochs:
+  - {end_time: 0, start_size: 139218.2153435968}
+- name: N296
+  ancestors: [N297]
+  epochs:
+  - {end_time: 3933673.1707317093, start_size: 216091.58592932683}
+- name: Fregata_magnificens
+  ancestors: [N269]
+  epochs:
+  - {end_time: 0, start_size: 189284.72667343784}
+- name: N268
+  ancestors: [N269]
+  epochs:
+  - {end_time: 4666751.219512197, start_size: 155521.84376499004}
+- name: Phoenicopterus_ruber
+  ancestors: [N76]
+  epochs:
+  - {end_time: 0, start_size: 223840.86709900305}
+- name: Phoenicopteriformes_g
+  ancestors: [N76]
+  epochs:
+  - {end_time: 1554401.2195121972, start_size: 298179.8269386224}
+- name: N228
+  ancestors: [N236]
+  epochs:
+  - {end_time: 2321839.0243902467, start_size: 303033.2485872293}
+- name: N235
+  ancestors: [N236]
+  epochs:
+  - {end_time: 6182976.829268295, start_size: 113281.62049334552}
+- name: Psophia_crepitans
+  ancestors: [N132]
+  epochs:
+  - {end_time: 0, start_size: 103655.80412405146}
+- name: N131
+  ancestors: [N132]
+  epochs:
+  - {end_time: 3360628.0487804897, start_size: 220701.43050926513}
+- name: N138
+  ancestors: [N146]
+  epochs:
+  - {end_time: 5436112.195121953, start_size: 98490.93506580601}
+- name: N145
+  ancestors: [N146]
+  epochs:
+  - {end_time: 3943682.926829271, start_size: 162423.0764279933}
+- name: Acanthisitta_chloris
+  ancestors: [Passeriformes]
+  epochs:
+  - {end_time: 0, start_size: 78925.58000817076}
+- name: N714
+  ancestors: [Passeriformes]
+  epochs:
+  - {end_time: 5773682.926829271, start_size: 65028.58719274274}
+- name: Hydrobates_tethys
+  ancestors: [N235]
+  epochs:
+  - {end_time: 0, start_size: 113281.62049334552}
+- name: N234
+  ancestors: [N235]
+  epochs:
+  - {end_time: 2913500.000000002, start_size: 274116.0557399033}
+- name: N161
+  ancestors: [N189]
+  epochs:
+  - {end_time: 5033614.634146344, start_size: 81994.3012200222}
+- name: N188
+  ancestors: [N189]
+  epochs:
+  - {end_time: 5534151.219512197, start_size: 132235.00780708218}
+- name: Chaetura_pelagica
+  ancestors: [N207]
+  epochs:
+  - {end_time: 0, start_size: 31770.818417595077}
+- name: Hemiprocne_comata
+  ancestors: [N207]
+  epochs:
+  - {end_time: 0, start_size: 31770.818417595077}
+- name: Todus_mexicanus
+  ancestors: [N327]
+  epochs:
+  - {end_time: 0, start_size: 93013.77512736715}
+- name: N326
+  ancestors: [N327]
+  epochs:
+  - {end_time: 5536224.390243905, start_size: 81623.80134217307}
+- name: N106
+  ancestors: [Cuculiformes]
+  epochs:
+  - {end_time: 4707901.219512197, start_size: 106523.4477484862}
+- name: N115
+  ancestors: [Cuculiformes]
+  epochs:
+  - {end_time: 5124903.658536587, start_size: 72719.55863096657}
+- name: N422
+  ancestors: [N714]
+  epochs:
+  - {end_time: 4823884.146341465, start_size: 91542.85220134207}
+- name: N713
+  ancestors: [N714]
+  epochs:
+  - {end_time: 4893343.902439026, start_size: 52276.44081870915}
+- name: Baryphthengus_martii
+  ancestors: [N326]
+  epochs:
+  - {end_time: 0, start_size: 81623.80134217307}
+- name: N325
+  ancestors: [N326]
+  epochs:
+  - {end_time: 3937181.7073170748, start_size: 111243.45949060177}
+- name: Turnix_velox
+  ancestors: [N188]
+  epochs:
+  - {end_time: 0, start_size: 132235.00780708218}
+- name: N187
+  ancestors: [N188]
+  epochs:
+  - {end_time: 4211800.000000002, start_size: 142720.81721548567}
+- name: Burhinus_bistriatus
+  ancestors: [N138]
+  epochs:
+  - {end_time: 0, start_size: 98490.93506580601}
+- name: N137
+  ancestors: [N138]
+  epochs:
+  - {end_time: 1623052.4390243925, start_size: 204689.67551421723}
+- name: N109
+  ancestors: [N115]
+  epochs:
+  - {end_time: 1183273.1707317084, start_size: 208684.5204266042}
+- name: N114
+  ancestors: [N115]
+  epochs:
+  - {end_time: 3732626.8292682944, start_size: 85418.11030555013}
+- name: Bucco_capensis
+  ancestors: [N331]
+  epochs:
+  - {end_time: 0, start_size: 150662.88015746974}
+- name: Galbula_dea
+  ancestors: [N331]
+  epochs:
+  - {end_time: 0, start_size: 150662.88015746974}
+- name: N151
+  ancestors: [N161]
+  epochs:
+  - {end_time: 3348978.0487804897, start_size: 133885.76470447748}
+- name: N160
+  ancestors: [N161]
+  epochs:
+  - {end_time: 4145307.317073173, start_size: 62568.071485140965}
+- name: Heliornis_fulica
+  ancestors: [N125]
+  epochs:
+  - {end_time: 0, start_size: 128117.7695461439}
+- name: N124
+  ancestors: [N125]
+  epochs:
+  - {end_time: 2211254.8780487822, start_size: 155792.5618829007}
+- name: N425
+  ancestors: [N713]
+  epochs:
+  - {end_time: 3500215.8536585383, start_size: 101029.40893460021}
+- name: N712
+  ancestors: [N713]
+  epochs:
+  - {end_time: 4627718.292682929, start_size: 60233.26246993816}
+- name: N382
+  ancestors: [N422]
+  epochs:
+  - {end_time: 3586669.5121951234, start_size: 75824.88513744304}
+- name: N421
+  ancestors: [N422]
+  epochs:
+  - {end_time: 4250506.097560978, start_size: 67304.37751627117}
+- name: Geococcyx_californianus
+  ancestors: [N106]
+  epochs:
+  - {end_time: 0, start_size: 106523.4477484862}
+- name: Crotophaga_sulcirostris
+  ancestors: [N106]
+  epochs:
+  - {end_time: 0, start_size: 106523.4477484862}
+- name: Sula_dactylatra
+  ancestors: [N268]
+  epochs:
+  - {end_time: 0, start_size: 155521.84376499004}
+- name: N267
+  ancestors: [N268]
+  epochs:
+  - {end_time: 4181692.6829268313, start_size: 89354.96599056828}
+- name: N334
+  ancestors: [N344]
+  epochs:
+  - {end_time: 3327390.243902441, start_size: 97337.05211810736}
+- name: N343
+  ancestors: [N344]
+  epochs:
+  - {end_time: 3427409.7560975626, start_size: 77606.85507833176}
+- name: Balaeniceps_rex
+  ancestors: [N250]
+  epochs:
+  - {end_time: 0, start_size: 276112.6355614941}
+- name: N249
+  ancestors: [N250]
+  epochs:
+  - {end_time: 4511498.7804878075, start_size: 669326.5212961988}
+- name: Brachypteracias_leptosomus
+  ancestors: [N317]
+  epochs:
+  - {end_time: 0, start_size: 154921.1195966963}
+- name: Eurystomus_gularis
+  ancestors: [N317]
+  epochs:
+  - {end_time: 0, start_size: 154921.1195966963}
+- name: N428
+  ancestors: [N712]
+  epochs:
+  - {end_time: 4026150.000000002, start_size: 111419.8137629121}
+- name: N711
+  ancestors: [N712]
+  epochs:
+  - {end_time: 4064541.4634146364, start_size: 47047.38135146195}
+- name: Pelecanus_crispus
+  ancestors: [N249]
+  epochs:
+  - {end_time: 0, start_size: 669326.5212961988}
+- name: Scopus_umbretta
+  ancestors: [N249]
+  epochs:
+  - {end_time: 0, start_size: 669326.5212961988}
+- name: Nestor_notabilis
+  ancestors: [Psittaciformes]
+  epochs:
+  - {end_time: 0, start_size: 164648.55494497158}
+- name: N369
+  ancestors: [Psittaciformes]
+  epochs:
+  - {end_time: 3351563.4146341486, start_size: 77761.49477381747}
+- name: N399
+  ancestors: [N421]
+  epochs:
+  - {end_time: 3440186.585365855, start_size: 55889.470002204485}
+- name: N420
+  ancestors: [N421]
+  epochs:
+  - {end_time: 2685741.4634146355, start_size: 97355.9900829061}
+- name: N167
+  ancestors: [N187]
+  epochs:
+  - {end_time: 3501990.243902441, start_size: 79590.88511793905}
+- name: N186
+  ancestors: [N187]
+  epochs:
+  - {end_time: 3277146.341463417, start_size: 86284.73270341856}
+- name: N257
+  ancestors: [N267]
+  epochs:
+  - {end_time: 2307562.1951219533, start_size: 117789.79829409576}
+- name: N266
+  ancestors: [N267]
+  epochs:
+  - {end_time: 761010.9756097579, start_size: 187321.91143235803}
+- name: Cochlearius_cochlearius
+  ancestors: [N245]
+  epochs:
+  - {end_time: 0, start_size: 153485.17689586972}
+- name: Egretta_garzetta
+  ancestors: [N245]
+  epochs:
+  - {end_time: 0, start_size: 153485.17689586972}
+- name: N154
+  ancestors: [N160]
+  epochs:
+  - {end_time: 3045969.5121951234, start_size: 87418.885765938}
+- name: N159
+  ancestors: [N160]
+  epochs:
+  - {end_time: 3492729.268292685, start_size: 66572.4193454369}
+- name: N437
+  ancestors: [N711]
+  epochs:
+  - {end_time: 3468796.341463417, start_size: 73717.33285572469}
+- name: N710
+  ancestors: [N711]
+  epochs:
+  - {end_time: 3729237.8048780514, start_size: 52804.866050215904}
+- name: Climacteris_rufus
+  ancestors: [N428]
+  epochs:
+  - {end_time: 0, start_size: 111419.8137629121}
+- name: Ptilonorhynchus_violaceus
+  ancestors: [N428]
+  epochs:
+  - {end_time: 0, start_size: 111419.8137629121}
+- name: N141
+  ancestors: [N145]
+  epochs:
+  - {end_time: 2909302.4390243925, start_size: 104636.86626888652}
+- name: N144
+  ancestors: [N145]
+  epochs:
+  - {end_time: 2447358.536585368, start_size: 120764.65924418424}
+- name: Ceyx_cyanopectus
+  ancestors: [N325]
+  epochs:
+  - {end_time: 0, start_size: 111243.45949060177}
+- name: N324
+  ancestors: [N325]
+  epochs:
+  - {end_time: 3725960.975609758, start_size: 147433.4734627202}
+- name: Pandion_haliaetus
+  ancestors: [N296]
+  epochs:
+  - {end_time: 0, start_size: 216091.58592932683}
+- name: N295
+  ancestors: [N296]
+  epochs:
+  - {end_time: 1132860.975609757, start_size: 184312.53278844088}
+- name: Herpetotheres_cachinnans
+  ancestors: [Falconiformes]
+  epochs:
+  - {end_time: 0, start_size: 227313.2047349918}
+- name: N358
+  ancestors: [Falconiformes]
+  epochs:
+  - {end_time: 148100.00000000186, start_size: 170743.03010056342}
+- name: Rhinopomastus_cyanomelas
+  ancestors: [N312]
+  epochs:
+  - {end_time: 0, start_size: 156976.8741500619}
+- name: Upupa_epops
+  ancestors: [N312]
+  epochs:
+  - {end_time: 0, start_size: 156976.8741500619}
+- name: Eurypyga_helias
+  ancestors: [Eurypygiformes]
+  epochs:
+  - {end_time: 0, start_size: 189165.98270194913}
+- name: Rhynochetos_jubatus
+  ancestors: [Eurypygiformes]
+  epochs:
+  - {end_time: 0, start_size: 189165.98270194913}
+- name: Cuculus_canorus
+  ancestors: [N114]
+  epochs:
+  - {end_time: 0, start_size: 85418.11030555013}
+- name: N113
+  ancestors: [N114]
+  epochs:
+  - {end_time: 2636112.1951219533, start_size: 75384.33195869009}
+- name: N440
+  ancestors: [N710]
+  epochs:
+  - {end_time: 3525609.7560975635, start_size: 216969.95716426166}
+- name: N709
+  ancestors: [N710]
+  epochs:
+  - {end_time: 3597768.292682929, start_size: 73118.40254734973}
+- name: Chloroceryle_aenea
+  ancestors: [N324]
+  epochs:
+  - {end_time: 0, start_size: 147433.4734627202}
+- name: Halcyon_senegalensis
+  ancestors: [N324]
+  epochs:
+  - {end_time: 0, start_size: 147433.4734627202}
+- name: Mesembrinibis_cayennensis
+  ancestors: [N242]
+  epochs:
+  - {end_time: 0, start_size: 290265.00428740314}
+- name: Nipponia_nippon
+  ancestors: [N242]
+  epochs:
+  - {end_time: 0, start_size: 290265.00428740314}
+- name: N501
+  ancestors: [N709]
+  epochs:
+  - {end_time: 3130741.4634146364, start_size: 114534.85565615493}
+- name: N708
+  ancestors: [N709]
+  epochs:
+  - {end_time: 3391745.1219512215, start_size: 51004.2902420259}
+- name: N374
+  ancestors: [N382]
+  epochs:
+  - {end_time: 2587764.634146343, start_size: 81503.65731571932}
+- name: N381
+  ancestors: [N382]
+  epochs:
+  - {end_time: 3509995.1219512206, start_size: 101040.45838553288}
+- name: Orthonyx_spaldingii
+  ancestors: [N440]
+  epochs:
+  - {end_time: 0, start_size: 216969.95716426166}
+- name: Pomatostomus_ruficeps
+  ancestors: [N440]
+  epochs:
+  - {end_time: 0, start_size: 216969.95716426166}
+- name: N377
+  ancestors: [N381]
+  epochs:
+  - {end_time: 3417068.292682928, start_size: 242285.76613522347}
+- name: N380
+  ancestors: [N381]
+  epochs:
+  - {end_time: 2971937.8048780495, start_size: 71423.13824596575}
+- name: Dromas_ardeola
+  ancestors: [N167]
+  epochs:
+  - {end_time: 0, start_size: 79590.88511793905}
+- name: N166
+  ancestors: [N167]
+  epochs:
+  - {end_time: 2829517.0731707336, start_size: 71659.74980680988}
+- name: Atrichornis_clamosus
+  ancestors: [N425]
+  epochs:
+  - {end_time: 0, start_size: 101029.40893460021}
+- name: Menura_novaehollandiae
+  ancestors: [N425]
+  epochs:
+  - {end_time: 0, start_size: 101029.40893460021}
+- name: Jacana_jacana
+  ancestors: [N159]
+  epochs:
+  - {end_time: 0, start_size: 66572.4193454369}
+- name: N158
+  ancestors: [N159]
+  epochs:
+  - {end_time: 2266015.8536585383, start_size: 85727.7070475686}
+- name: Malurus_elegans
+  ancestors: [N437]
+  epochs:
+  - {end_time: 0, start_size: 73717.33285572469}
+- name: N436
+  ancestors: [N437]
+  epochs:
+  - {end_time: 3151668.292682929, start_size: 60647.71049418187}
+- name: N385
+  ancestors: [N399]
+  epochs:
+  - {end_time: 1387595.1219512206, start_size: 109829.57539673144}
+- name: N398
+  ancestors: [N399]
+  epochs:
+  - {end_time: 3239284.1463414645, start_size: 58456.74997723958}
+- name: Psilopogon_haemacephalus
+  ancestors: [N343]
+  epochs:
+  - {end_time: 0, start_size: 77606.85507833176}
+- name: N342
+  ancestors: [N343]
+  epochs:
+  - {end_time: 3124742.682926831, start_size: 101996.58201642585}
+- name: Sapayoa_aenigma
+  ancestors: [N377]
+  epochs:
+  - {end_time: 0, start_size: 242285.76613522347}
+- name: Pitta_sordida
+  ancestors: [N377]
+  epochs:
+  - {end_time: 0, start_size: 242285.76613522347}
+- name: Cnemophilus_loriae
+  ancestors: [N708]
+  epochs:
+  - {end_time: 0, start_size: 51004.2902420259}
+- name: N707
+  ancestors: [N708]
+  epochs:
+  - {end_time: 3329696.341463417, start_size: 125403.26738592658}
+- name: Aramus_guarauna
+  ancestors: [N131]
+  epochs:
+  - {end_time: 0, start_size: 220701.43050926513}
+- name: N130
+  ancestors: [N131]
+  epochs:
+  - {end_time: 2233229.268292685, start_size: 93357.72181915521}
+- name: N363
+  ancestors: [N369]
+  epochs:
+  - {end_time: 1517808.5365853682, start_size: 136391.32462649603}
+- name: N368
+  ancestors: [N369]
+  epochs:
+  - {end_time: 2854964.634146344, start_size: 49036.76007888138}
+- name: Limosa_lapponica
+  ancestors: [N151]
+  epochs:
+  - {end_time: 0, start_size: 133885.76470447748}
+- name: N150
+  ancestors: [N151]
+  epochs:
+  - {end_time: 2219006.0975609776, start_size: 91368.0735795447}
+- name: Melanocharis_versteri
+  ancestors: [N707]
+  epochs:
+  - {end_time: 0, start_size: 125403.26738592658}
+- name: N706
+  ancestors: [N707]
+  epochs:
+  - {end_time: 3232973.1707317093, start_size: 107896.66630444126}
+- name: Picoides_pubescens
+  ancestors: [N334]
+  epochs:
+  - {end_time: 0, start_size: 97337.05211810736}
+- name: Indicator_maculatus
+  ancestors: [N334]
+  epochs:
+  - {end_time: 0, start_size: 97337.05211810736}
+- name: N176
+  ancestors: [N186]
+  epochs:
+  - {end_time: 3096825.6097561, start_size: 55190.72222658188}
+- name: N185
+  ancestors: [N186]
+  epochs:
+  - {end_time: 2486285.3658536607, start_size: 79441.66339442959}
+- name: Grallaria_varia
+  ancestors: [N398]
+  epochs:
+  - {end_time: 0, start_size: 58456.74997723958}
+- name: N397
+  ancestors: [N398]
+  epochs:
+  - {end_time: 3059342.68292683, start_size: 48014.08984948924}
+- name: N506
+  ancestors: [N706]
+  epochs:
+  - {end_time: 2883141.4634146364, start_size: 115568.49677189332}
+- name: N705
+  ancestors: [N706]
+  epochs:
+  - {end_time: 3160918.292682929, start_size: 108781.25752787267}
+- name: N511
+  ancestors: [N705]
+  epochs:
+  - {end_time: 3040778.0487804897, start_size: 457821.3464194425}
+- name: N704
+  ancestors: [N705]
+  epochs:
+  - {end_time: 2727492.6829268318, start_size: 47208.97340059007}
+- name: Nyctiprogne_leucopyga
+  ancestors: [Caprimulgidae]
+  epochs:
+  - {end_time: 0, start_size: 270347.8204597422}
+- name: N196
+  ancestors: [Caprimulgidae]
+  epochs:
+  - {end_time: 2673174.3902439037, start_size: 155099.46498864453}
+- name: Dasyornis_broadbenti
+  ancestors: [N436]
+  epochs:
+  - {end_time: 0, start_size: 60647.71049418187}
+- name: N435
+  ancestors: [N436]
+  epochs:
+  - {end_time: 3041032.92682927, start_size: 96880.2059574811}
+- name: Ptilorrhoa_leucosticta
+  ancestors: [N501]
+  epochs:
+  - {end_time: 0, start_size: 114534.85565615493}
+- name: N500
+  ancestors: [N501]
+  epochs:
+  - {end_time: 3081482.926829271, start_size: 28734.698219775677}
+- name: Tricholaema_leucomelas
+  ancestors: [N342]
+  epochs:
+  - {end_time: 0, start_size: 101996.58201642585}
+- name: N341
+  ancestors: [N342]
+  epochs:
+  - {end_time: 1769673.1707317084, start_size: 85392.3143464039}
+- name: Stercorarius_parasiticus
+  ancestors: [N176]
+  epochs:
+  - {end_time: 0, start_size: 55190.72222658188}
+- name: N175
+  ancestors: [N176]
+  epochs:
+  - {end_time: 2348139.024390246, start_size: 59518.818653328024}
+- name: Tauraco_erythrolophus
+  ancestors: [Musophagiformes]
+  epochs:
+  - {end_time: 0, start_size: 288312.654123582}
+- name: N97
+  ancestors: [Musophagiformes]
+  epochs:
+  - {end_time: 2057089.0243902458, start_size: 91792.39332819717}
+- name: Edolisoma_coerulescens
+  ancestors: [N500]
+  epochs:
+  - {end_time: 0, start_size: 28734.698219775677}
+- name: N499
+  ancestors: [N500]
+  epochs:
+  - {end_time: 2989696.3414634177, start_size: 336000.4448096625}
+- name: Scytalopus_superciliaris
+  ancestors: [N397]
+  epochs:
+  - {end_time: 0, start_size: 48014.08984948924}
+- name: N396
+  ancestors: [N397]
+  epochs:
+  - {end_time: 2964090.2439024393, start_size: 106153.4481869021}
+- name: Pedionomus_torquatus
+  ancestors: [N154]
+  epochs:
+  - {end_time: 0, start_size: 87418.885765938}
+- name: Thinocorus_orbignyianus
+  ancestors: [N154]
+  epochs:
+  - {end_time: 0, start_size: 87418.885765938}
+- name: Grantiella_picta
+  ancestors: [N435]
+  epochs:
+  - {end_time: 0, start_size: 96880.2059574811}
+- name: N434
+  ancestors: [N435]
+  epochs:
+  - {end_time: 2688952.4390243916, start_size: 75240.25780964324}
+- name: Drymodes_brunneopygia
+  ancestors: [N511]
+  epochs:
+  - {end_time: 0, start_size: 457821.3464194425}
+- name: N510
+  ancestors: [N511]
+  epochs:
+  - {end_time: 2075246.3414634168, start_size: 82852.5219618636}
+- name: N465
+  ancestors: [N499]
+  epochs:
+  - {end_time: 2498598.7804878075, start_size: 53802.90211635242}
+- name: N498
+  ancestors: [N499]
+  epochs:
+  - {end_time: 2967646.3414634177, start_size: 267334.2723467685}
+- name: Calyptomena_viridis
+  ancestors: [N380]
+  epochs:
+  - {end_time: 0, start_size: 71423.13824596575}
+- name: Smithornis_capensis
+  ancestors: [N380]
+  epochs:
+  - {end_time: 0, start_size: 71423.13824596575}
+- name: Mohoua_ochrocephala
+  ancestors: [N498]
+  epochs:
+  - {end_time: 0, start_size: 267334.2723467685}
+- name: N497
+  ancestors: [N498]
+  epochs:
+  - {end_time: 2938682.926829271, start_size: 359896.54805869085}
+- name: Formicarius_rufipectus
+  ancestors: [N396]
+  epochs:
+  - {end_time: 0, start_size: 106153.4481869021}
+- name: N395
+  ancestors: [N396]
+  epochs:
+  - {end_time: 2027359.7560975607, start_size: 64911.35136104414}
+- name: Buceros_rhinoceros
+  ancestors: [N309]
+  epochs:
+  - {end_time: 0, start_size: 228859.65923567693}
+- name: Bucorvus_abyssinicus
+  ancestors: [N309]
+  epochs:
+  - {end_time: 0, start_size: 228859.65923567693}
+- name: N477
+  ancestors: [N497]
+  epochs:
+  - {end_time: 2313336.585365856, start_size: 74347.37929479496}
+- name: N496
+  ancestors: [N497]
+  epochs:
+  - {end_time: 2910982.926829271, start_size: 514118.6636270671}
+- name: Fulmarus_glacialis
+  ancestors: [N234]
+  epochs:
+  - {end_time: 0, start_size: 274116.0557399033}
+- name: N233
+  ancestors: [N234]
+  epochs:
+  - {end_time: 2704769.5121951234, start_size: 78981.35912920692}
+- name: Daphoenositta_chrysoptera
+  ancestors: [N496]
+  epochs:
+  - {end_time: 0, start_size: 514118.6636270671}
+- name: N495
+  ancestors: [N496]
+  epochs:
+  - {end_time: 2857625.6097561, start_size: 71577.96273596154}
+- name: Charadrius_alexandrinus
+  ancestors: [N141]
+  epochs:
+  - {end_time: 0, start_size: 104636.86626888652}
+- name: Charadrius_vociferus
+  ancestors: [N141]
+  epochs:
+  - {end_time: 0, start_size: 104636.86626888652}
+- name: N86
+  ancestors: [Columbiformes]
+  epochs:
+  - {end_time: 2760404.8780487822, start_size: 89177.8775485979}
+- name: N91
+  ancestors: [Columbiformes]
+  epochs:
+  - {end_time: 2809758.5365853673, start_size: 279090.1047325536}
+- name: Callaeas_wilsoni
+  ancestors: [N506]
+  epochs:
+  - {end_time: 0, start_size: 115568.49677189332}
+- name: Notiomystis_cincta
+  ancestors: [N506]
+  epochs:
+  - {end_time: 0, start_size: 115568.49677189332}
+- name: Eulacestoma_nigropectus
+  ancestors: [N495]
+  epochs:
+  - {end_time: 0, start_size: 71577.96273596154}
+- name: N494
+  ancestors: [N495]
+  epochs:
+  - {end_time: 2813708.536585368, start_size: 326712.3295654416}
+- name: Amazona_guildingii
+  ancestors: [N368]
+  epochs:
+  - {end_time: 0, start_size: 49036.76007888138}
+- name: N367
+  ancestors: [N368]
+  epochs:
+  - {end_time: 2256734.1463414654, start_size: 56824.78382413807}
+- name: Glareola_pratincola
+  ancestors: [N166]
+  epochs:
+  - {end_time: 0, start_size: 71659.74980680988}
+- name: Rhinoptilus_africanus
+  ancestors: [N166]
+  epochs:
+  - {end_time: 0, start_size: 71659.74980680988}
+- name: N482
+  ancestors: [N494]
+  epochs:
+  - {end_time: 2549369.5121951243, start_size: 124841.39810707649}
+- name: N493
+  ancestors: [N494]
+  epochs:
+  - {end_time: 2772132.926829271, start_size: 322869.57358864695}
+- name: Columbina_picui
+  ancestors: [N91]
+  epochs:
+  - {end_time: 0, start_size: 279090.1047325536}
+- name: N90
+  ancestors: [N91]
+  epochs:
+  - {end_time: 1691925.609756099, start_size: 77519.18292520162}
+- name: N485
+  ancestors: [N493]
+  epochs:
+  - {end_time: 2639492.6829268318, start_size: 216178.27482118507}
+- name: N492
+  ancestors: [N493]
+  epochs:
+  - {end_time: 2680668.29268293, start_size: 164564.708424586}
+- name: Alopecoenas_beccarii
+  ancestors: [N86]
+  epochs:
+  - {end_time: 0, start_size: 89177.8775485979}
+- name: Caloenas_nicobarica
+  ancestors: [N86]
+  epochs:
+  - {end_time: 0, start_size: 89177.8775485979}
+- name: N576
+  ancestors: [N704]
+  epochs:
+  - {end_time: 2531587.8048780514, start_size: 153286.71509868605}
+- name: N703
+  ancestors: [N704]
+  epochs:
+  - {end_time: 2684612.1951219533, start_size: 72207.72600279824}
+- name: Calonectris_borealis
+  ancestors: [N233]
+  epochs:
+  - {end_time: 0, start_size: 78981.35912920692}
+- name: Pelecanoides_urinatrix
+  ancestors: [N233]
+  epochs:
+  - {end_time: 0, start_size: 78981.35912920692}
+- name: Origma_solitaria
+  ancestors: [N434]
+  epochs:
+  - {end_time: 0, start_size: 75240.25780964324}
+- name: Pardalotus_punctatus
+  ancestors: [N434]
+  epochs:
+  - {end_time: 0, start_size: 75240.25780964324}
+- name: N402
+  ancestors: [N420]
+  epochs:
+  - {end_time: 700700.0000000009, start_size: 104993.45168716538}
+- name: N419
+  ancestors: [N420]
+  epochs:
+  - {end_time: 2587417.0731707327, start_size: 70188.94811130757}
+- name: N621
+  ancestors: [N703]
+  epochs:
+  - {end_time: 2540446.341463417, start_size: 396799.12074394105}
+- name: N702
+  ancestors: [N703]
+  epochs:
+  - {end_time: 2406835.3658536607, start_size: 80497.8422427686}
+- name: Oreocharis_arfaki
+  ancestors: [N492]
+  epochs:
+  - {end_time: 0, start_size: 164564.708424586}
+- name: N491
+  ancestors: [N492]
+  epochs:
+  - {end_time: 2261906.0975609785, start_size: 56727.067766251996}
+- name: Antrostomus_carolinensis
+  ancestors: [N196]
+  epochs:
+  - {end_time: 0, start_size: 155099.46498864453}
+- name: Chordeiles_acutipennis
+  ancestors: [N196]
+  epochs:
+  - {end_time: 0, start_size: 155099.46498864453}
+- name: Pachycephala_philippinensis
+  ancestors: [N485]
+  epochs:
+  - {end_time: 0, start_size: 216178.27482118507}
+- name: Oriolus_oriolus
+  ancestors: [N485]
+  epochs:
+  - {end_time: 0, start_size: 216178.27482118507}
+- name: Nyctibius_bracteatus
+  ancestors: [Nyctibiidae]
+  epochs:
+  - {end_time: 0, start_size: 320345.0096406121}
+- name: Nyctibius_grandis
+  ancestors: [Nyctibiidae]
+  epochs:
+  - {end_time: 0, start_size: 320345.0096406121}
+- name: Ceuthmochares_aereus
+  ancestors: [N113]
+  epochs:
+  - {end_time: 0, start_size: 75384.33195869009}
+- name: Piaya_cayana
+  ancestors: [N113]
+  epochs:
+  - {end_time: 0, start_size: 75384.33195869009}
+- name: Colius_striatus
+  ancestors: [Coliiformes]
+  epochs:
+  - {end_time: 0, start_size: 252229.12638038106}
+- name: Urocolius_indicus
+  ancestors: [Coliiformes]
+  epochs:
+  - {end_time: 0, start_size: 252229.12638038106}
+- name: Neodrepanis_coruscans
+  ancestors: [N374]
+  epochs:
+  - {end_time: 0, start_size: 81503.65731571932}
+- name: Serilophus_lunatus
+  ancestors: [N374]
+  epochs:
+  - {end_time: 0, start_size: 81503.65731571932}
+- name: Cephalopterus_ornatus
+  ancestors: [N419]
+  epochs:
+  - {end_time: 0, start_size: 70188.94811130757}
+- name: N418
+  ancestors: [N419]
+  epochs:
+  - {end_time: 2511870.7317073178, start_size: 62842.36874546823}
+- name: Aleadryas_rufinucha
+  ancestors: [N482]
+  epochs:
+  - {end_time: 0, start_size: 124841.39810707649}
+- name: Falcunculus_frontatus
+  ancestors: [N482]
+  epochs:
+  - {end_time: 0, start_size: 124841.39810707649}
+- name: N579
+  ancestors: [N621]
+  epochs:
+  - {end_time: 1645635.3658536607, start_size: 64339.21590058743}
+- name: N620
+  ancestors: [N621]
+  epochs:
+  - {end_time: 2523147.560975612, start_size: 126956.3362136486}
+- name: N518
+  ancestors: [N576]
+  epochs:
+  - {end_time: 2236284.1463414663, start_size: 59828.51873736279}
+- name: N575
+  ancestors: [N576]
+  epochs:
+  - {end_time: 2299185.3658536607, start_size: 38023.01392559462}
+- name: Regulus_satrapa
+  ancestors: [N620]
+  epochs:
+  - {end_time: 0, start_size: 126956.3362136486}
+- name: N619
+  ancestors: [N620]
+  epochs:
+  - {end_time: 2485441.4634146364, start_size: 214926.9468369295}
+- name: Apaloderma_vittatum
+  ancestors: [Trogoniformes]
+  epochs:
+  - {end_time: 0, start_size: 255211.28578797702}
+- name: Trogon_melanurus
+  ancestors: [Trogoniformes]
+  epochs:
+  - {end_time: 0, start_size: 255211.28578797702}
+- name: Pachyramphus_minor
+  ancestors: [N418]
+  epochs:
+  - {end_time: 0, start_size: 62842.36874546823}
+- name: N417
+  ancestors: [N418]
+  epochs:
+  - {end_time: 2467151.2195121963, start_size: 184683.2354555593}
+- name: N445
+  ancestors: [N465]
+  epochs:
+  - {end_time: 2041367.0731707346, start_size: 92498.37989057357}
+- name: N464
+  ancestors: [N465]
+  epochs:
+  - {end_time: 2452585.3658536607, start_size: 293919.9292189023}
+- name: N179
+  ancestors: [N185]
+  epochs:
+  - {end_time: 2380086.585365856, start_size: 269016.16416691407}
+- name: N184
+  ancestors: [N185]
+  epochs:
+  - {end_time: 482460.97560975794, start_size: 156493.2198609525}
+- name: N591
+  ancestors: [N619]
+  epochs:
+  - {end_time: 2258396.341463417, start_size: 45035.939543674154}
+- name: N618
+  ancestors: [N619]
+  epochs:
+  - {end_time: 2406071.951219514, start_size: 85229.32575595735}
+- name: N407
+  ancestors: [N417]
+  epochs:
+  - {end_time: 2359181.7073170748, start_size: 252634.13134732243}
+- name: N416
+  ancestors: [N417]
+  epochs:
+  - {end_time: 2249225.609756099, start_size: 54234.01135778988}
+- name: Dicrurus_megarhynchus
+  ancestors: [N464]
+  epochs:
+  - {end_time: 0, start_size: 293919.9292189023}
+- name: N463
+  ancestors: [N464]
+  epochs:
+  - {end_time: 2396897.560975612, start_size: 53620.32900626417}
+- name: Himantopus_himantopus
+  ancestors: [N144]
+  epochs:
+  - {end_time: 0, start_size: 120764.65924418424}
+- name: Ibidorhyncha_struthersii
+  ancestors: [N144]
+  epochs:
+  - {end_time: 0, start_size: 120764.65924418424}
+- name: Promerops_cafer
+  ancestors: [N702]
+  epochs:
+  - {end_time: 0, start_size: 80497.8422427686}
+- name: N701
+  ancestors: [N702]
+  epochs:
+  - {end_time: 2381086.585365856, start_size: 10487.11146718792}
+- name: Elachura_formosa
+  ancestors: [N618]
+  epochs:
+  - {end_time: 0, start_size: 85229.32575595735}
+- name: N617
+  ancestors: [N618]
+  epochs:
+  - {end_time: 1955630.4878048794, start_size: 39567.925769227935}
+- name: Myiagra_hebetior
+  ancestors: [N463]
+  epochs:
+  - {end_time: 0, start_size: 53620.32900626417}
+- name: N462
+  ancestors: [N463]
+  epochs:
+  - {end_time: 2361390.243902441, start_size: 453830.8940179313}
+- name: N625
+  ancestors: [N701]
+  epochs:
+  - {end_time: 1941513.4146341486, start_size: 56715.62983544629}
+- name: N700
+  ancestors: [N701]
+  epochs:
+  - {end_time: 2271356.0975609776, start_size: 38353.46497724386}
+- name: Phaetusa_simplex
+  ancestors: [N179]
+  epochs:
+  - {end_time: 0, start_size: 269016.16416691407}
+- name: Rynchops_niger
+  ancestors: [N179]
+  epochs:
+  - {end_time: 0, start_size: 269016.16416691407}
+- name: N452
+  ancestors: [N462]
+  epochs:
+  - {end_time: 2336391.4634146364, start_size: 377359.8859270379}
+- name: N461
+  ancestors: [N462]
+  epochs:
+  - {end_time: 2082207.317073173, start_size: 66775.64367473879}
+- name: Onychorhynchus_coronatus
+  ancestors: [N407]
+  epochs:
+  - {end_time: 0, start_size: 252634.13134732243}
+- name: Oxyruncus_cristatus
+  ancestors: [N407]
+  epochs:
+  - {end_time: 0, start_size: 252634.13134732243}
+- name: Cepphus_grylle
+  ancestors: [N175]
+  epochs:
+  - {end_time: 0, start_size: 59518.818653328024}
+- name: N174
+  ancestors: [N175]
+  epochs:
+  - {end_time: 1978059.7560975626, start_size: 51606.349961438886}
+- name: Struthidea_cinerea
+  ancestors: [N452]
+  epochs:
+  - {end_time: 0, start_size: 377359.8859270379}
+- name: N451
+  ancestors: [N452]
+  epochs:
+  - {end_time: 2267835.3658536607, start_size: 221998.79006224588}
+- name: Fregetta_grallaria
+  ancestors: [N228]
+  epochs:
+  - {end_time: 0, start_size: 303033.2485872293}
+- name: Oceanites_oceanicus
+  ancestors: [N228]
+  epochs:
+  - {end_time: 0, start_size: 303033.2485872293}
+- name: Machaerirhynchus_nigripectus
+  ancestors: [N477]
+  epochs:
+  - {end_time: 0, start_size: 74347.37929479496}
+- name: N476
+  ancestors: [N477]
+  epochs:
+  - {end_time: 2261746.341463417, start_size: 126940.90144720119}
+- name: Anhinga_anhinga
+  ancestors: [N257]
+  epochs:
+  - {end_time: 0, start_size: 117789.79829409576}
+- name: Anhinga_rufa
+  ancestors: [N257]
+  epochs:
+  - {end_time: 0, start_size: 117789.79829409576}
+- name: N521
+  ancestors: [N575]
+  epochs:
+  - {end_time: 2121469.5121951243, start_size: 87221.3084640936}
+- name: N574
+  ancestors: [N575]
+  epochs:
+  - {end_time: 2264295.1219512215, start_size: 97882.66587818439}
+- name: N628
+  ancestors: [N700]
+  epochs:
+  - {end_time: 893425.6097560991, start_size: 93886.66204219763}
+- name: N699
+  ancestors: [N700]
+  epochs:
+  - {end_time: 2235306.0975609776, start_size: 61340.29196726353}
+- name: Ifrita_kowaldi
+  ancestors: [N451]
+  epochs:
+  - {end_time: 0, start_size: 221998.79006224588}
+- name: Paradisaea_raggiana
+  ancestors: [N451]
+  epochs:
+  - {end_time: 0, start_size: 221998.79006224588}
+- name: Nycticryphes_semicollaris
+  ancestors: [N158]
+  epochs:
+  - {end_time: 0, start_size: 85727.7070475686}
+- name: Rostratula_benghalensis
+  ancestors: [N158]
+  epochs:
+  - {end_time: 0, start_size: 85727.7070475686}
+- name: Nicator_chloris
+  ancestors: [N574]
+  epochs:
+  - {end_time: 0, start_size: 97882.66587818439}
+- name: N573
+  ancestors: [N574]
+  epochs:
+  - {end_time: 2190059.7560975626, start_size: 35143.31143196205}
+- name: Pteruthius_melanotis
+  ancestors: [N491]
+  epochs:
+  - {end_time: 0, start_size: 56727.067766251996}
+- name: N490
+  ancestors: [N491]
+  epochs:
+  - {end_time: 1788539.0243902467, start_size: 53098.03307693647}
+- name: Gymnorhina_tibicen
+  ancestors: [N476]
+  epochs:
+  - {end_time: 0, start_size: 126940.90144720119}
+- name: N475
+  ancestors: [N476]
+  epochs:
+  - {end_time: 2177240.243902441, start_size: 56992.438412680334}
+- name: Tichodroma_muraria
+  ancestors: [N591]
+  epochs:
+  - {end_time: 0, start_size: 45035.939543674154}
+- name: N590
+  ancestors: [N591]
+  epochs:
+  - {end_time: 2218486.585365856, start_size: 64822.98756488159}
+- name: Agapornis_roseicollis
+  ancestors: [N367]
+  epochs:
+  - {end_time: 0, start_size: 56824.78382413807}
+- name: Melopsittacus_undulatus
+  ancestors: [N367]
+  epochs:
+  - {end_time: 0, start_size: 56824.78382413807}
+- name: Piprites_chloris
+  ancestors: [N416]
+  epochs:
+  - {end_time: 0, start_size: 54234.01135778988}
+- name: N415
+  ancestors: [N416]
+  epochs:
+  - {end_time: 2131759.7560975626, start_size: 59072.33593823038}
+- name: Anthoscopus_minutus
+  ancestors: [N518]
+  epochs:
+  - {end_time: 0, start_size: 59828.51873736279}
+- name: N517
+  ancestors: [N518]
+  epochs:
+  - {end_time: 776664.6341463439, start_size: 78230.20159058504}
+- name: Irena_cyanogastra
+  ancestors: [N699]
+  epochs:
+  - {end_time: 0, start_size: 61340.29196726353}
+- name: N698
+  ancestors: [N699]
+  epochs:
+  - {end_time: 2111521.951219514, start_size: 33061.22066392918}
+- name: Balearica_regulorum
+  ancestors: [N130]
+  epochs:
+  - {end_time: 0, start_size: 93357.72181915521}
+- name: Grus_americana
+  ancestors: [N130]
+  epochs:
+  - {end_time: 0, start_size: 93357.72181915521}
+- name: Arenaria_interpres
+  ancestors: [N150]
+  epochs:
+  - {end_time: 0, start_size: 91368.0735795447}
+- name: Calidris_pugnax
+  ancestors: [N150]
+  epochs:
+  - {end_time: 0, start_size: 91368.0735795447}
+- name: Sitta_europaea
+  ancestors: [N590]
+  epochs:
+  - {end_time: 0, start_size: 64822.98756488159}
+- name: N589
+  ancestors: [N590]
+  epochs:
+  - {end_time: 2076780.4878048804, start_size: 36950.27180372938}
+- name: Atlantisia_rogersi
+  ancestors: [N124]
+  epochs:
+  - {end_time: 0, start_size: 155792.5618829007}
+- name: Zapornia_atra
+  ancestors: [N124]
+  epochs:
+  - {end_time: 0, start_size: 155792.5618829007}
+- name: Sylvietta_virens
+  ancestors: [N573]
+  epochs:
+  - {end_time: 0, start_size: 35143.31143196205}
+- name: N572
+  ancestors: [N573]
+  epochs:
+  - {end_time: 2123334.1463414654, start_size: 43632.640646329455}
+- name: Rhagologus_leucostigma
+  ancestors: [N475]
+  epochs:
+  - {end_time: 0, start_size: 56992.438412680334}
+- name: N474
+  ancestors: [N475]
+  epochs:
+  - {end_time: 2033832.92682927, start_size: 49514.30933973678}
+- name: Calypte_anna
+  ancestors: [N210]
+  epochs:
+  - {end_time: 0, start_size: 256052.11828053158}
+- name: Oreotrochilus_melanogaster
+  ancestors: [N210]
+  epochs:
+  - {end_time: 0, start_size: 256052.11828053158}
+- name: Neopipo_cinnamomea
+  ancestors: [N415]
+  epochs:
+  - {end_time: 0, start_size: 59072.33593823038}
+- name: N414
+  ancestors: [N415]
+  epochs:
+  - {end_time: 2090336.5853658551, start_size: 192933.02022142147}
+- name: Cisticola_juncidis
+  ancestors: [N572]
+  epochs:
+  - {end_time: 0, start_size: 43632.640646329455}
+- name: N571
+  ancestors: [N572]
+  epochs:
+  - {end_time: 2097308.536585368, start_size: 187012.0956693144}
+- name: Alaudala_cheleensis
+  ancestors: [N521]
+  epochs:
+  - {end_time: 0, start_size: 87221.3084640936}
+- name: Panurus_biarmicus
+  ancestors: [N521]
+  epochs:
+  - {end_time: 0, start_size: 87221.3084640936}
+- name: Peucedramus_taeniatus
+  ancestors: [N698]
+  epochs:
+  - {end_time: 0, start_size: 33061.22066392918}
+- name: N697
+  ancestors: [N698]
+  epochs:
+  - {end_time: 1994264.634146343, start_size: 48579.759831859235}
+- name: N533
+  ancestors: [N571]
+  epochs:
+  - {end_time: 2056789.0243902467, start_size: 192072.6912261327}
+- name: N570
+  ancestors: [N571]
+  epochs:
+  - {end_time: 2070095.1219512215, start_size: 75832.41356346548}
+- name: Tachuris_rubrigastra
+  ancestors: [N414]
+  epochs:
+  - {end_time: 0, start_size: 192933.02022142147}
+- name: N413
+  ancestors: [N414]
+  epochs:
+  - {end_time: 2003774.3902439037, start_size: 163482.41772250744}
+- name: Lanius_ludovicianus
+  ancestors: [N461]
+  epochs:
+  - {end_time: 0, start_size: 66775.64367473879}
+- name: N460
+  ancestors: [N461]
+  epochs:
+  - {end_time: 976189.0243902458, start_size: 68962.46341544461}
+- name: N585
+  ancestors: [N589]
+  epochs:
+  - {end_time: 1541063.4146341486, start_size: 45668.12721304317}
+- name: N588
+  ancestors: [N589]
+  epochs:
+  - {end_time: 274741.46341463644, start_size: 104512.99904557985}
+- name: Chaetops_frenatus
+  ancestors: [N510]
+  epochs:
+  - {end_time: 0, start_size: 82852.5219618636}
+- name: Picathartes_gymnocephalus
+  ancestors: [N510]
+  epochs:
+  - {end_time: 0, start_size: 82852.5219618636}
+- name: Glaucidium_brasilianum
+  ancestors: [N282]
+  epochs:
+  - {end_time: 0, start_size: 304702.7550130818}
+- name: N281
+  ancestors: [N282]
+  epochs:
+  - {end_time: 285309.7560975626, start_size: 139782.76448130579}
+- name: Hirundo_rustica
+  ancestors: [N570]
+  epochs:
+  - {end_time: 0, start_size: 75832.41356346548}
+- name: N569
+  ancestors: [N570]
+  epochs:
+  - {end_time: 2044181.7073170748, start_size: 93900.5962527852}
+- name: Corythaeola_cristata
+  ancestors: [N97]
+  epochs:
+  - {end_time: 0, start_size: 91792.39332819717}
+- name: Corythaixoides_concolor
+  ancestors: [N97]
+  epochs:
+  - {end_time: 0, start_size: 91792.39332819717}
+- name: N527
+  ancestors: [N533]
+  epochs:
+  - {end_time: 844553.6585365878, start_size: 85881.41453202895}
+- name: N532
+  ancestors: [N533]
+  epochs:
+  - {end_time: 1848542.6829268318, start_size: 53812.75519004021}
+- name: N547
+  ancestors: [N569]
+  epochs:
+  - {end_time: 1891921.951219514, start_size: 48129.30893301751}
+- name: N568
+  ancestors: [N569]
+  epochs:
+  - {end_time: 1970886.5853658551, start_size: 97601.86512470702}
+- name: Chaetorhynchus_papuensis
+  ancestors: [N445]
+  epochs:
+  - {end_time: 0, start_size: 92498.37989057357}
+- name: Rhipidura_dahli
+  ancestors: [N445]
+  epochs:
+  - {end_time: 0, start_size: 92498.37989057357}
+- name: Dryoscopus_gambensis
+  ancestors: [N474]
+  epochs:
+  - {end_time: 0, start_size: 49514.30933973678}
+- name: N473
+  ancestors: [N474]
+  epochs:
+  - {end_time: 1927412.1951219533, start_size: 77627.19346273386}
+- name: Sclerurus_mexicanus
+  ancestors: [N395]
+  epochs:
+  - {end_time: 0, start_size: 64911.35136104414}
+- name: N394
+  ancestors: [N395]
+  epochs:
+  - {end_time: 1747909.7560975607, start_size: 45825.34357337743}
+- name: Mionectes_macconnelli
+  ancestors: [N413]
+  epochs:
+  - {end_time: 0, start_size: 163482.41772250744}
+- name: Tyrannus_savana
+  ancestors: [N413]
+  epochs:
+  - {end_time: 0, start_size: 163482.41772250744}
+- name: N641
+  ancestors: [N697]
+  epochs:
+  - {end_time: 1928434.1463414645, start_size: 247380.98709941}
+- name: N696
+  ancestors: [N697]
+  epochs:
+  - {end_time: 1930095.1219512206, start_size: 101952.2490760964}
+- name: Alca_torda
+  ancestors: [N174]
+  epochs:
+  - {end_time: 0, start_size: 51606.349961438886}
+- name: N173
+  ancestors: [N174]
+  epochs:
+  - {end_time: 551759.7560975626, start_size: 133231.2437902116}
+- name: N550
+  ancestors: [N568]
+  epochs:
+  - {end_time: 1146958.5365853673, start_size: 57807.72790018517}
+- name: N567
+  ancestors: [N568]
+  epochs:
+  - {end_time: 1710693.9024390262, start_size: 46670.12784890178}
+- name: N601
+  ancestors: [N617]
+  epochs:
+  - {end_time: 1373698.7804878065, start_size: 53927.180018438856}
+- name: N616
+  ancestors: [N617]
+  epochs:
+  - {end_time: 1900486.5853658551, start_size: 97110.07613919015}
+- name: Dicaeum_eximium
+  ancestors: [N625]
+  epochs:
+  - {end_time: 0, start_size: 56715.62983544629}
+- name: Leptocoma_aspasia
+  ancestors: [N625]
+  epochs:
+  - {end_time: 0, start_size: 56715.62983544629}
+- name: N644
+  ancestors: [N696]
+  epochs:
+  - {end_time: 701685.3658536598, start_size: 81493.96703518392}
+- name: N695
+  ancestors: [N696]
+  epochs:
+  - {end_time: 1796713.4146341477, start_size: 37041.16480600939}
+- name: Lophotis_ruficrista
+  ancestors: [Otidiformes]
+  epochs:
+  - {end_time: 0, start_size: 310552.57751218835}
+- name: N102
+  ancestors: [Otidiformes]
+  epochs:
+  - {end_time: 1609487.8048780514, start_size: 110951.39703761344}
+- name: Urocynchramus_pylzowi
+  ancestors: [N641]
+  epochs:
+  - {end_time: 0, start_size: 247380.98709941}
+- name: N640
+  ancestors: [N641]
+  epochs:
+  - {end_time: 1731318.292682928, start_size: 42240.13006732874}
+- name: Pterocles_burchelli
+  ancestors: [Pterocliformes]
+  epochs:
+  - {end_time: 0, start_size: 273893.7776658496}
+- name: N81
+  ancestors: [Pterocliformes]
+  epochs:
+  - {end_time: 1721509.7560975626, start_size: 77527.18791375482}
+- name: Dyaphorophyia_castanea
+  ancestors: [N473]
+  epochs:
+  - {end_time: 0, start_size: 77627.19346273386}
+- name: Mystacornis_crossleyi
+  ancestors: [N473]
+  epochs:
+  - {end_time: 0, start_size: 77627.19346273386}
+- name: Cinclus_mexicanus
+  ancestors: [N616]
+  epochs:
+  - {end_time: 0, start_size: 97110.07613919015}
+- name: N615
+  ancestors: [N616]
+  epochs:
+  - {end_time: 1771282.92682927, start_size: 36275.09388307722}
+- name: N537
+  ancestors: [N547]
+  epochs:
+  - {end_time: 940651.2195121972, start_size: 71092.38083609064}
+- name: N546
+  ancestors: [N547]
+  epochs:
+  - {end_time: 1828169.5121951234, start_size: 61795.39445247767}
+- name: Locustella_ochotensis
+  ancestors: [N532]
+  epochs:
+  - {end_time: 0, start_size: 53812.75519004021}
+- name: N531
+  ancestors: [N532]
+  epochs:
+  - {end_time: 1785230.4878048804, start_size: 127836.21662084489}
+- name: Hylia_prasina
+  ancestors: [N546]
+  epochs:
+  - {end_time: 0, start_size: 61795.39445247767}
+- name: N545
+  ancestors: [N546]
+  epochs:
+  - {end_time: 1767802.4390243916, start_size: 65430.00987876063}
+- name: N647
+  ancestors: [N695]
+  epochs:
+  - {end_time: 1531445.1219512206, start_size: 65130.780520274566}
+- name: N694
+  ancestors: [N695]
+  epochs:
+  - {end_time: 1701906.0975609766, start_size: 40303.92648796342}
+- name: Erpornis_zantholeuca
+  ancestors: [N490]
+  epochs:
+  - {end_time: 0, start_size: 53098.03307693647}
+- name: Vireo_altiloquus
+  ancestors: [N490]
+  epochs:
+  - {end_time: 0, start_size: 53098.03307693647}
+- name: Oxylabes_madagascariensis
+  ancestors: [N531]
+  epochs:
+  - {end_time: 0, start_size: 127836.21662084489}
+- name: Donacobius_atricapilla
+  ancestors: [N531]
+  epochs:
+  - {end_time: 0, start_size: 127836.21662084489}
+- name: Catharus_fuscescens
+  ancestors: [N615]
+  epochs:
+  - {end_time: 0, start_size: 36275.09388307722}
+- name: N614
+  ancestors: [N615]
+  epochs:
+  - {end_time: 1374047.5609756112, start_size: 35559.743111941774}
+- name: Eubucco_bourcierii
+  ancestors: [N341]
+  epochs:
+  - {end_time: 0, start_size: 85392.3143464039}
+- name: N340
+  ancestors: [N341]
+  epochs:
+  - {end_time: 1546262.1951219523, start_size: 87170.30792883712}
+- name: Aegithalos_caudatus
+  ancestors: [N545]
+  epochs:
+  - {end_time: 0, start_size: 65430.00987876063}
+- name: N544
+  ancestors: [N545]
+  epochs:
+  - {end_time: 1639365.8536585383, start_size: 46360.864446096784}
+- name: Aptenodytes_forsteri
+  ancestors: [Sphenisciformes]
+  epochs:
+  - {end_time: 0, start_size: 307435.6561812592}
+- name: Pygoscelis_adeliae
+  ancestors: [Sphenisciformes]
+  epochs:
+  - {end_time: 0, start_size: 307435.6561812592}
+- name: Furnarius_figulus
+  ancestors: [N394]
+  epochs:
+  - {end_time: 0, start_size: 45825.34357337743}
+- name: N393
+  ancestors: [N394]
+  epochs:
+  - {end_time: 776076.8292682925, start_size: 57449.5185971827}
+- name: Ploceus_nigricollis
+  ancestors: [N640]
+  epochs:
+  - {end_time: 0, start_size: 42240.13006732874}
+- name: N639
+  ancestors: [N640]
+  epochs:
+  - {end_time: 1450396.3414634159, start_size: 33959.302344324075}
+- name: Pterocles_gutturalis
+  ancestors: [N81]
+  epochs:
+  - {end_time: 0, start_size: 77527.18791375482}
+- name: Syrrhaptes_paradoxus
+  ancestors: [N81]
+  epochs:
+  - {end_time: 0, start_size: 77527.18791375482}
+- name: N555
+  ancestors: [N567]
+  epochs:
+  - {end_time: 1503259.7560975626, start_size: 66822.31378532921}
+- name: N566
+  ancestors: [N567]
+  epochs:
+  - {end_time: 1634134.1463414654, start_size: 102960.2048971118}
+- name: Motacilla_alba
+  ancestors: [N694]
+  epochs:
+  - {end_time: 0, start_size: 40303.92648796342}
+- name: N693
+  ancestors: [N694]
+  epochs:
+  - {end_time: 1570558.5365853673, start_size: 37701.54634832053}
+- name: Columba_livia
+  ancestors: [N90]
+  epochs:
+  - {end_time: 0, start_size: 77519.18292520162}
+- name: Patagioenas_fasciata
+  ancestors: [N90]
+  epochs:
+  - {end_time: 0, start_size: 77519.18292520162}
+- name: Bombycilla_garrulus
+  ancestors: [N579]
+  epochs:
+  - {end_time: 0, start_size: 64339.21590058743}
+- name: Phainopepla_nitens
+  ancestors: [N579]
+  epochs:
+  - {end_time: 0, start_size: 64339.21590058743}
+- name: Erythrocercus_mccallii
+  ancestors: [N544]
+  epochs:
+  - {end_time: 0, start_size: 46360.864446096784}
+- name: N543
+  ancestors: [N544]
+  epochs:
+  - {end_time: 1087371.951219514, start_size: 44982.20668350142}
+- name: N560
+  ancestors: [N566]
+  epochs:
+  - {end_time: 666969.5121951234, start_size: 73581.2098301831}
+- name: N565
+  ancestors: [N566]
+  epochs:
+  - {end_time: 1559260.975609758, start_size: 87103.78833673224}
+- name: Chionis_minor
+  ancestors: [N137]
+  epochs:
+  - {end_time: 0, start_size: 204689.67551421723}
+- name: Pluvianellus_socialis
+  ancestors: [N137]
+  epochs:
+  - {end_time: 0, start_size: 204689.67551421723}
+- name: Ardeotis_kori
+  ancestors: [N102]
+  epochs:
+  - {end_time: 0, start_size: 110951.39703761344}
+- name: Chlamydotis_macqueenii
+  ancestors: [N102]
+  epochs:
+  - {end_time: 0, start_size: 110951.39703761344}
+- name: N657
+  ancestors: [N693]
+  epochs:
+  - {end_time: 938671.951219514, start_size: 41157.11507679439}
+- name: N692
+  ancestors: [N693]
+  epochs:
+  - {end_time: 1393709.7560975626, start_size: 39188.08884430142}
+- name: Pomatorhinus_ruficollis
+  ancestors: [N565]
+  epochs:
+  - {end_time: 0, start_size: 87103.78833673224}
+- name: N564
+  ancestors: [N565]
+  epochs:
+  - {end_time: 1457095.1219512215, start_size: 131234.6359649652}
+- name: Podiceps_cristatus
+  ancestors: [Phoenicopteriformes_g]
+  epochs:
+  - {end_time: 0, start_size: 298179.8269386224}
+- name: Podilymbus_podiceps
+  ancestors: [Phoenicopteriformes_g]
+  epochs:
+  - {end_time: 0, start_size: 298179.8269386224}
+- name: Ramphastos_sulfuratus
+  ancestors: [N340]
+  epochs:
+  - {end_time: 0, start_size: 87170.30792883712}
+- name: Semnornis_frantzii
+  ancestors: [N340]
+  epochs:
+  - {end_time: 0, start_size: 87170.30792883712}
+- name: Polioptila_caerulea
+  ancestors: [N585]
+  epochs:
+  - {end_time: 0, start_size: 45668.12721304317}
+- name: Thryothorus_ludovicianus
+  ancestors: [N585]
+  epochs:
+  - {end_time: 0, start_size: 45668.12721304317}
+- name: Passer_domesticus
+  ancestors: [N647]
+  epochs:
+  - {end_time: 0, start_size: 65130.780520274566}
+- name: Hypocryptadius_cinnamomeus
+  ancestors: [N647]
+  epochs:
+  - {end_time: 0, start_size: 65130.780520274566}
+- name: Eolophus_roseicapillus
+  ancestors: [N363]
+  epochs:
+  - {end_time: 0, start_size: 136391.32462649603}
+- name: Probosciger_aterrimus
+  ancestors: [N363]
+  epochs:
+  - {end_time: 0, start_size: 136391.32462649603}
+- name: Sinosuthora_webbiana
+  ancestors: [N555]
+  epochs:
+  - {end_time: 0, start_size: 66822.31378532921}
+- name: N554
+  ancestors: [N555]
+  epochs:
+  - {end_time: 679657.317073172, start_size: 57902.98194893739}
+- name: Illadopsis_cleaveri
+  ancestors: [N564]
+  epochs:
+  - {end_time: 0, start_size: 131234.6359649652}
+- name: Leiothrix_lutea
+  ancestors: [N564]
+  epochs:
+  - {end_time: 0, start_size: 131234.6359649652}
+- name: N635
+  ancestors: [N639]
+  epochs:
+  - {end_time: 263918.29268292803, start_size: 71520.77733919401}
+- name: N638
+  ancestors: [N639]
+  epochs:
+  - {end_time: 804326.8292682935, start_size: 40273.31445129753}
+- name: Rhodinocichla_rosea
+  ancestors: [N692]
+  epochs:
+  - {end_time: 0, start_size: 39188.08884430142}
+- name: N691
+  ancestors: [N692]
+  epochs:
+  - {end_time: 1329179.268292684, start_size: 109127.48696066956}
+- name: Rhegmatorhina_hoffmannsi
+  ancestors: [N385]
+  epochs:
+  - {end_time: 0, start_size: 109829.57539673144}
+- name: Sakesphorus_luctuosus
+  ancestors: [N385]
+  epochs:
+  - {end_time: 0, start_size: 109829.57539673144}
+- name: N606
+  ancestors: [N614]
+  epochs:
+  - {end_time: 850086.5853658551, start_size: 42623.24974223341}
+- name: N613
+  ancestors: [N614]
+  epochs:
+  - {end_time: 1103196.3414634159, start_size: 37936.87116029411}
+- name: Buphagus_erythrorhynchus
+  ancestors: [N601]
+  epochs:
+  - {end_time: 0, start_size: 53927.180018438856}
+- name: N600
+  ancestors: [N601]
+  epochs:
+  - {end_time: 1325101.2195121972, start_size: 63444.91748647881}
+- name: N661
+  ancestors: [N691]
+  epochs:
+  - {end_time: 1259240.2439024402, start_size: 528256.375412194}
+- name: N690
+  ancestors: [N691]
+  epochs:
+  - {end_time: 1284162.1951219523, start_size: 123848.1513019747}
+- name: Toxostoma_redivivum
+  ancestors: [N600]
+  epochs:
+  - {end_time: 0, start_size: 63444.91748647881}
+- name: N599
+  ancestors: [N600]
+  epochs:
+  - {end_time: 1251707.317073173, start_size: 44004.70504537558}
+- name: N672
+  ancestors: [N690]
+  epochs:
+  - {end_time: 1094926.8292682935, start_size: 87109.59540506388}
+- name: N689
+  ancestors: [N690]
+  epochs:
+  - {end_time: 1192382.9268292692, start_size: 69013.44080569495}
+- name: Calcarius_ornatus
+  ancestors: [N661]
+  epochs:
+  - {end_time: 0, start_size: 528256.375412194}
+- name: Emberiza_fucata
+  ancestors: [N661]
+  epochs:
+  - {end_time: 0, start_size: 528256.375412194}
+- name: Rhabdornis_inornatus
+  ancestors: [N599]
+  epochs:
+  - {end_time: 0, start_size: 44004.70504537558}
+- name: N598
+  ancestors: [N599]
+  epochs:
+  - {end_time: 458893.90243902616, start_size: 43342.296600119196}
+- name: N679
+  ancestors: [N689]
+  epochs:
+  - {end_time: 928308.5365853664, start_size: 50978.4379068734}
+- name: N688
+  ancestors: [N689]
+  epochs:
+  - {end_time: 1046304.8780487813, start_size: 112182.77749123485}
+- name: Centropus_bengalensis
+  ancestors: [N109]
+  epochs:
+  - {end_time: 0, start_size: 208684.5204266042}
+- name: Centropus_unirufus
+  ancestors: [N109]
+  epochs:
+  - {end_time: 0, start_size: 208684.5204266042}
+- name: Brachypodius_atriceps
+  ancestors: [N550]
+  epochs:
+  - {end_time: 0, start_size: 57807.72790018517}
+- name: Pycnonotus_jocosus
+  ancestors: [N550]
+  epochs:
+  - {end_time: 0, start_size: 57807.72790018517}
+- name: Circaetus_pectoralis
+  ancestors: [N295]
+  epochs:
+  - {end_time: 0, start_size: 184312.53278844088}
+- name: N294
+  ancestors: [N295]
+  epochs:
+  - {end_time: 1024646.3414634159, start_size: 40197.37217847361}
+- name: Erithacus_rubecula
+  ancestors: [N613]
+  epochs:
+  - {end_time: 0, start_size: 37936.87116029411}
+- name: N612
+  ancestors: [N613]
+  epochs:
+  - {end_time: 972843.9024390252, start_size: 67289.20400424044}
+- name: N666
+  ancestors: [N672]
+  epochs:
+  - {end_time: 807818.2926829271, start_size: 47012.009212318524}
+- name: N671
+  ancestors: [N672]
+  epochs:
+  - {end_time: 936696.341463415, start_size: 79581.42956712529}
+- name: Cettia_cetti
+  ancestors: [N543]
+  epochs:
+  - {end_time: 0, start_size: 44982.20668350142}
+- name: Horornis_vulcanius
+  ancestors: [N543]
+  epochs:
+  - {end_time: 0, start_size: 44982.20668350142}
+- name: N682
+  ancestors: [N688]
+  epochs:
+  - {end_time: 397047.5609756103, start_size: 42178.62425556254}
+- name: N687
+  ancestors: [N688]
+  epochs:
+  - {end_time: 396545.12195122056, start_size: 42831.40198416487}
+- name: N290
+  ancestors: [N294]
+  epochs:
+  - {end_time: 60374.390243903734, start_size: 50282.98633549985}
+- name: N293
+  ancestors: [N294]
+  epochs:
+  - {end_time: 459484.1463414645, start_size: 46170.59560408384}
+- name: Aphelocoma_coerulescens
+  ancestors: [N460]
+  epochs:
+  - {end_time: 0, start_size: 68962.46341544461}
+- name: N459
+  ancestors: [N460]
+  epochs:
+  - {end_time: 301289.0243902458, start_size: 43621.25509320858}
+- name: Ficedula_albicollis
+  ancestors: [N612]
+  epochs:
+  - {end_time: 0, start_size: 67289.20400424044}
+- name: N611
+  ancestors: [N612]
+  epochs:
+  - {end_time: 616741.4634146346, start_size: 36045.07493527218}
+- name: Cariama_cristata
+  ancestors: [Cariamiformes]
+  epochs:
+  - {end_time: 0, start_size: 348995.6732672604}
+- name: Chunga_burmeisteri
+  ancestors: [Cariamiformes]
+  epochs:
+  - {end_time: 0, start_size: 348995.6732672604}
+- name: Phylloscopus_trochilus
+  ancestors: [N537]
+  epochs:
+  - {end_time: 0, start_size: 71092.38083609064}
+- name: Rhadina_sibilatrix
+  ancestors: [N537]
+  epochs:
+  - {end_time: 0, start_size: 71092.38083609064}
+- name: N651
+  ancestors: [N657]
+  epochs:
+  - {end_time: 170485.3658536598, start_size: 34784.10261885187}
+- name: N656
+  ancestors: [N657]
+  epochs:
+  - {end_time: 546310.9756097579, start_size: 30708.06728589159}
+- name: Nesospiza_acunhae
+  ancestors: [N671]
+  epochs:
+  - {end_time: 0, start_size: 79581.42956712529}
+- name: N670
+  ancestors: [N671]
+  epochs:
+  - {end_time: 870908.5365853664, start_size: 115382.11476524264}
+- name: Spizella_passerina
+  ancestors: [N679]
+  epochs:
+  - {end_time: 0, start_size: 50978.4379068734}
+- name: N678
+  ancestors: [N679]
+  epochs:
+  - {end_time: 708873.1707317075, start_size: 58609.5832751997}
+- name: Chloropsis_cyanopogon
+  ancestors: [N628]
+  epochs:
+  - {end_time: 0, start_size: 93886.66204219763}
+- name: Chloropsis_hardwickii
+  ancestors: [N628]
+  epochs:
+  - {end_time: 0, start_size: 93886.66204219763}
+- name: Geospiza_fortis
+  ancestors: [N670]
+  epochs:
+  - {end_time: 0, start_size: 115382.11476524264}
+- name: Sporophila_hypoxantha
+  ancestors: [N670]
+  epochs:
+  - {end_time: 0, start_size: 115382.11476524264}
+- name: Cercotrichas_coryphaeus
+  ancestors: [N606]
+  epochs:
+  - {end_time: 0, start_size: 42623.24974223341}
+- name: Copsychus_sechellarum
+  ancestors: [N606]
+  epochs:
+  - {end_time: 0, start_size: 42623.24974223341}
+- name: Acrocephalus_arundinaceus
+  ancestors: [N527]
+  epochs:
+  - {end_time: 0, start_size: 85881.41453202895}
+- name: Hippolais_icterina
+  ancestors: [N527]
+  epochs:
+  - {end_time: 0, start_size: 85881.41453202895}
+- name: Pheucticus_melanocephalus
+  ancestors: [N666]
+  epochs:
+  - {end_time: 0, start_size: 47012.009212318524}
+- name: N665
+  ancestors: [N666]
+  epochs:
+  - {end_time: 753042.6829268299, start_size: 180217.42595480342}
+- name: Lonchura_striata
+  ancestors: [N638]
+  epochs:
+  - {end_time: 0, start_size: 40273.31445129753}
+- name: Taeniopygia_guttata
+  ancestors: [N638]
+  epochs:
+  - {end_time: 0, start_size: 40273.31445129753}
+- name: Poecile_atricapillus
+  ancestors: [N517]
+  epochs:
+  - {end_time: 0, start_size: 78230.20159058504}
+- name: N516
+  ancestors: [N517]
+  epochs:
+  - {end_time: 555474.3902439047, start_size: 35294.897498376224}
+- name: Campylorhamphus_procurvoides
+  ancestors: [N393]
+  epochs:
+  - {end_time: 0, start_size: 57449.5185971827}
+- name: Xiphorhynchus_elegans
+  ancestors: [N393]
+  epochs:
+  - {end_time: 0, start_size: 57449.5185971827}
+- name: N260
+  ancestors: [N266]
+  epochs:
+  - {end_time: 685839.0243902458, start_size: 57526.495714797806}
+- name: N265
+  ancestors: [N266]
+  epochs:
+  - {end_time: 437703.6585365869, start_size: 43328.12995192378}
+- name: Cardinalis_cardinalis
+  ancestors: [N665]
+  epochs:
+  - {end_time: 0, start_size: 180217.42595480342}
+- name: Passerina_amoena
+  ancestors: [N665]
+  epochs:
+  - {end_time: 0, start_size: 180217.42595480342}
+- name: Melospiza_melodia
+  ancestors: [N678]
+  epochs:
+  - {end_time: 0, start_size: 58609.5832751997}
+- name: N677
+  ancestors: [N678]
+  epochs:
+  - {end_time: 421025.6097560972, start_size: 34272.82961633035}
+- name: Prunella_fulvescens
+  ancestors: [N644]
+  epochs:
+  - {end_time: 0, start_size: 81493.96703518392}
+- name: Prunella_himalayana
+  ancestors: [N644]
+  epochs:
+  - {end_time: 0, start_size: 81493.96703518392}
+- name: Lepidothrix_coronata
+  ancestors: [N402]
+  epochs:
+  - {end_time: 0, start_size: 104993.45168716538}
+- name: Manacus_manacus
+  ancestors: [N402]
+  epochs:
+  - {end_time: 0, start_size: 104993.45168716538}
+- name: Phalacrocorax_carbo
+  ancestors: [N260]
+  epochs:
+  - {end_time: 0, start_size: 57526.495714797806}
+- name: Phalacrocorax_pelagicus
+  ancestors: [N260]
+  epochs:
+  - {end_time: 0, start_size: 57526.495714797806}
+- name: Sylvia_atricapilla
+  ancestors: [N554]
+  epochs:
+  - {end_time: 0, start_size: 57902.98194893739}
+- name: Sylvia_borin
+  ancestors: [N554]
+  epochs:
+  - {end_time: 0, start_size: 57902.98194893739}
+- name: Sterrhoptilus_dennistouni
+  ancestors: [N560]
+  epochs:
+  - {end_time: 0, start_size: 73581.2098301831}
+- name: N559
+  ancestors: [N560]
+  epochs:
+  - {end_time: 235765.8536585383, start_size: 46305.27609740911}
+- name: Oenanthe_oenanthe
+  ancestors: [N611]
+  epochs:
+  - {end_time: 0, start_size: 36045.07493527218}
+- name: Saxicola_maurus
+  ancestors: [N611]
+  epochs:
+  - {end_time: 0, start_size: 36045.07493527218}
+- name: Parus_major
+  ancestors: [N516]
+  epochs:
+  - {end_time: 0, start_size: 35294.897498376224}
+- name: Pseudopodoces_humilis
+  ancestors: [N516]
+  epochs:
+  - {end_time: 0, start_size: 35294.897498376224}
+- name: Uria_aalge
+  ancestors: [N173]
+  epochs:
+  - {end_time: 0, start_size: 133231.2437902116}
+- name: Uria_lomvia
+  ancestors: [N173]
+  epochs:
+  - {end_time: 0, start_size: 133231.2437902116}
+- name: Serinus_canaria
+  ancestors: [N656]
+  epochs:
+  - {end_time: 0, start_size: 30708.06728589159}
+- name: N655
+  ancestors: [N656]
+  epochs:
+  - {end_time: 161774.39024390467, start_size: 27781.04325772562}
+- name: Rissa_tridactyla
+  ancestors: [N184]
+  epochs:
+  - {end_time: 0, start_size: 156493.2198609525}
+- name: N183
+  ancestors: [N184]
+  epochs:
+  - {end_time: 392458.5365853673, start_size: 50007.07430888013}
+- name: Aquila_chrysaetos
+  ancestors: [N293]
+  epochs:
+  - {end_time: 0, start_size: 46170.59560408384}
+- name: Spizaetus_tyrannus
+  ancestors: [N293]
+  epochs:
+  - {end_time: 0, start_size: 46170.59560408384}
+- name: Leucopsar_rothschildi
+  ancestors: [N598]
+  epochs:
+  - {end_time: 0, start_size: 43342.296600119196}
+- name: Sturnus_vulgaris
+  ancestors: [N598]
+  epochs:
+  - {end_time: 0, start_size: 43342.296600119196}
+- name: Phalacrocorax_harrisi
+  ancestors: [N265]
+  epochs:
+  - {end_time: 0, start_size: 43328.12995192378}
+- name: N264
+  ancestors: [N265]
+  epochs:
+  - {end_time: 251521.951219514, start_size: 56040.88946337799}
+- name: Junco_hyemalis
+  ancestors: [N677]
+  epochs:
+  - {end_time: 0, start_size: 34272.82961633035}
+- name: Zonotrichia_albicollis
+  ancestors: [N677]
+  epochs:
+  - {end_time: 0, start_size: 34272.82961633035}
+- name: Setophaga_coronata
+  ancestors: [N682]
+  epochs:
+  - {end_time: 0, start_size: 42178.62425556254}
+- name: Setophaga_kirtlandii
+  ancestors: [N682]
+  epochs:
+  - {end_time: 0, start_size: 42178.62425556254}
+- name: Agelaius_phoeniceus
+  ancestors: [N687]
+  epochs:
+  - {end_time: 0, start_size: 42831.40198416487}
+- name: N686
+  ancestors: [N687]
+  epochs:
+  - {end_time: 320558.5365853673, start_size: 43211.40984868935}
+- name: Chroicocephalus_maculipennis
+  ancestors: [N183]
+  epochs:
+  - {end_time: 0, start_size: 50007.07430888013}
+- name: Larus_smithsonianus
+  ancestors: [N183]
+  epochs:
+  - {end_time: 0, start_size: 50007.07430888013}
+- name: Molothrus_ater
+  ancestors: [N686]
+  epochs:
+  - {end_time: 0, start_size: 43211.40984868935}
+- name: Quiscalus_mexicanus
+  ancestors: [N686]
+  epochs:
+  - {end_time: 0, start_size: 43211.40984868935}
+- name: Corvus_moneduloides
+  ancestors: [N459]
+  epochs:
+  - {end_time: 0, start_size: 43621.25509320858}
+- name: N458
+  ancestors: [N459]
+  epochs:
+  - {end_time: 102531.70731707476, start_size: 22269.838272181656}
+- name: Ciccaba_nigrolineata
+  ancestors: [N281]
+  epochs:
+  - {end_time: 0, start_size: 139782.76448130579}
+- name: Strix_occidentalis
+  ancestors: [N281]
+  epochs:
+  - {end_time: 0, start_size: 139782.76448130579}
+- name: Certhia_brachydactyla
+  ancestors: [N588]
+  epochs:
+  - {end_time: 0, start_size: 104512.99904557985}
+- name: Certhia_familiaris
+  ancestors: [N588]
+  epochs:
+  - {end_time: 0, start_size: 104512.99904557985}
+- name: Vidua_chalybeata
+  ancestors: [N635]
+  epochs:
+  - {end_time: 0, start_size: 71520.77733919401}
+- name: Vidua_macroura
+  ancestors: [N635]
+  epochs:
+  - {end_time: 0, start_size: 71520.77733919401}
+- name: Phalacrocorax_auritus
+  ancestors: [N264]
+  epochs:
+  - {end_time: 0, start_size: 56040.88946337799}
+- name: Phalacrocorax_brasilianus
+  ancestors: [N264]
+  epochs:
+  - {end_time: 0, start_size: 56040.88946337799}
+- name: Zosterops_hypoxanthus
+  ancestors: [N559]
+  epochs:
+  - {end_time: 0, start_size: 46305.27609740911}
+- name: Zosterops_lateralis
+  ancestors: [N559]
+  epochs:
+  - {end_time: 0, start_size: 46305.27609740911}
+- name: Chlorodrepanis_virens
+  ancestors: [N651]
+  epochs:
+  - {end_time: 0, start_size: 34784.10261885187}
+- name: Hemignathus_wilsoni
+  ancestors: [N651]
+  epochs:
+  - {end_time: 0, start_size: 34784.10261885187}
+- name: Loxia_curvirostra
+  ancestors: [N655]
+  epochs:
+  - {end_time: 0, start_size: 27781.04325772562}
+- name: Loxia_leucoptera
+  ancestors: [N655]
+  epochs:
+  - {end_time: 0, start_size: 27781.04325772562}
+- name: Falco_cherrug
+  ancestors: [N358]
+  epochs:
+  - {end_time: 0, start_size: 170743.03010056342}
+- name: Falco_peregrinus
+  ancestors: [N358]
+  epochs:
+  - {end_time: 0, start_size: 170743.03010056342}
+- name: Corvus_brachyrhynchos
+  ancestors: [N458]
+  epochs:
+  - {end_time: 0, start_size: 22269.838272181656}
+- name: Corvus_cornix
+  ancestors: [N458]
+  epochs:
+  - {end_time: 0, start_size: 22269.838272181656}
+- name: Haliaeetus_albicilla
+  ancestors: [N290]
+  epochs:
+  - {end_time: 0, start_size: 50282.98633549985}
+- name: Haliaeetus_leucocephalus
+  ancestors: [N290]
+  epochs:
+  - {end_time: 0, start_size: 50282.98633549985}
+pulses:
+- sources: [Amazona_guildingii]
+  dest: N367
+  time: 2399554
+  proportions: [0.9]
