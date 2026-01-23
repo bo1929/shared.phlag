@@ -146,6 +146,9 @@ if __name__ == "__main__":
             msprime.SampleSet(1, ploidy=1, time=st, population=node.taxon.label)
         )
 
+    tmain = ts.read_tree_newick(args.input_tree)
+    label_to_node = tmain.label_to_node(selection="all")
+
     initial_size = {}
     with open(args.pop_sizes, "r") as f:
         initial_size = dict(map(lambda x: x.strip().split("\t"), f.readlines()[1:]))
@@ -161,18 +164,31 @@ if __name__ == "__main__":
         demography = msprime.Demography.from_species_tree(tree, initial_size)
 
     events = [e for e in demography.events]
-    time_cencus = []
+    rmult_ignore = set()
     for e in events:
         edict = e.asdict()
-        assert(not(isinstance(edict.get("ancestral", ""), list)))
+        if edict.get("source", "") != "":
+            nd_event = label_to_node[edict["source"]]
+            for nd in nd_event.traverse_bfs(include_self=True):
+                rmult_ignore.add(nd[0].get_label())
+        if edict.get("dest", "") != "":
+            nd_event = label_to_node[edict["dest"]]
+            for nd in nd_event.traverse_bfs(include_self=True):
+                rmult_ignore.add(nd[0].get_label())
+
+        if (isinstance(edict.get("ancestral", ""), list)):
+            for lbl_ancestral in e.ancestral:
+                nd_ancestral = label_to_node[lbl_ancestral]
+                for nd in nd_ancestral.traverse_bfs(include_self=True):
+                    rmult_ignore.add(nd[0].get_label())
+            nd_derived = label_to_node[e.derived]
+            for nd in nd_derived.traverse_bfs(include_self=True):
+                rmult_ignore.add(nd[0].get_label())
     demography.sort_events()
 
     pop_to_popn = {}
     for ix, pop in enumerate(demography.populations):
         pop_to_popn[ix] = pop.name
-
-    tmain = ts.read_tree_newick(args.input_tree)
-    label_to_node = tmain.label_to_node(selection="all")
 
     if args.parameter_change_time > 0 and args.parameter_change_duration > 0:
         tseq = msprime.sim_ancestry(
@@ -320,6 +336,10 @@ if __name__ == "__main__":
         popn_to_rmult[pop] = srate / mean_srate
     popn_to_rmult["root"] = 1
     popn_to_srate["root"] = mean_srate
+    for label in rmult_ignore:
+        popn_to_rmult[label] = 1
+        popn_to_srate[label] = mean_srate
+
 
     popn_to_stime = {}
     popn_to_sdur = {}

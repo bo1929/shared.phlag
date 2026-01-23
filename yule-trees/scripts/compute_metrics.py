@@ -71,11 +71,16 @@ def get_labels(info_dict, stype):
 
 
 def get_phlag_pred(input_file, info_dict, stype, alt):
+    tree = None
     pred = np.zeros(info_dict.get("gc", DEFAULT_GC), dtype=int)
     pos = []
+    ix = 0
     with open(input_file, "r") as f:
         for line in f:
             if line.startswith("#"):
+                if ix == 1:
+                    tree = ts.read_tree_newick(line[2: ])
+                ix +=1
                 continue
             else:
                 pred = np.array(list(map(lambda x: int(x), line.strip().split(","))), dtype=int)
@@ -85,7 +90,7 @@ def get_phlag_pred(input_file, info_dict, stype, alt):
                     break
     if len(pos) > 0:
         pred[pos] = 1
-    return pred
+    return tree, pred
 
 
 def get_phylter_pred(input_file, info_dict, stype):
@@ -131,7 +136,10 @@ def main(args):
     true = get_labels(info_dict, stype)
 
     if method == "phlag":
-        pred = get_phlag_pred(input_file, info_dict, stype, alt)
+        tree, pred = get_phlag_pred(input_file, info_dict, stype, alt)
+        if len(args.labels) > 2:
+            cu = tree.find_node(args.labels[2], leaves=True, internal=True).get_edge_length()
+            args.labels.append(str(cu))
     elif method == "phylter":
         pred = get_phylter_pred(input_file, info_dict, stype)
     else:
@@ -141,6 +149,7 @@ def main(args):
             pred = 1 - pred
             pred = pred.astype(int)
     tn, fp, fn, tp = confusion_matrix(true, pred).ravel().tolist()
+    labels = '\t'.join(args.labels)
     if stype:
         # r = info_dict.get('b', 0)
         b = len(info_dict["end"])
@@ -148,21 +157,35 @@ def main(args):
         D = info_dict['donor']
         R = info_dict['recipient']
         ST = info_dict['gene_trees'].split("/")[-1].split("_")[0]
-        print("TN\tFP\tFN\tTP\tMp\tMb\tD\tR\tST", file=sys.stderr)
-        print(
-            f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{b}\t{D}\t{R}\t{ST}",
-            end=None,
-            file=sys.stdout,
-        )
+        print("TN\tFP\tFN\tTP\tp\tMb\tD\tR\tST", file=sys.stderr)
+        if args.labels is not None:
+            print(
+                f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{b}\t{D}\t{R}\t{ST}\t{labels}",
+                end=None,
+                file=sys.stdout,
+            )
+        else:
+            print(
+                f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{b}\t{D}\t{R}\t{ST}",
+                end=None,
+                file=sys.stdout,
+            )
     else:
         r = info_dict.get('r', 0)
         p = info_dict['p']
-        print("TN\tFP\tFN\tTP\tMp\tMr", file=sys.stderr)
-        print(
-            f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}",
-            end=None,
-            file=sys.stdout,
-        )
+        print("TN\tFP\tFN\tTP\tp\r", file=sys.stderr)
+        if args.labels is not None:
+            print(
+                f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}\t{labels}",
+                end=None,
+                file=sys.stdout,
+            )
+        else:
+            print(
+                f"{tn}\t{fp}\t{fn}\t{tp}\t{p}\t{r}",
+                end=None,
+                file=sys.stdout,
+            )
 
 
 if __name__ == "__main__":
@@ -173,5 +196,6 @@ if __name__ == "__main__":
     parser.add_argument("--stype", action="store_true", required=False)
     parser.add_argument("--alt", action="store_true", required=False)
     parser.add_argument("--revert", action="store_true", required=False)
+    parser.add_argument("--labels", type=str, nargs="*", required=False)
     args = parser.parse_args()
     main(args)
