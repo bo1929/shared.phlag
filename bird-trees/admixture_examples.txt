@@ -1,0 +1,15 @@
+# gene flow
+32M from Trogoniformes to Leptosomus_discolor (373,294)
+32M from Cuculiformes to Otidiformes (459,120)
+32M to N297 from Strigiformes (475,652)
+32M from Falconiformes to Cariamiformes (427,476)
+
+72M from Columbina_picui to N90 (408,896)
+72M from Amazona_guildingii to N367 (483,034)
+72M from N482 to N491 (487,398)
+72M from N702 to N576 (273,980)
+72M from N477 to N482 (620,332)
+
+80M from N565 to N560 (80,872)
+80M from N565 to N555 (206,430)
+80M from Eubucco_bourcierii to N340 (303,156)

@@ -1,0 +1,37 @@
+# seq 1 7 | xargs -I{} bash -c 'nw_trim main-num_generations.tre 3200000|nw_distance -mm -n -  `sort -nk2 <(TreeCluster.py -i <(nw_trim main-num_generations.tre 3200000) -m max -t 500000) | grep -v "\-1" | grep -w {} | cut -f1 |tr "\n" " " `; echo ===========================; ' 
+	Cuculiformes	Otidiformes
+Cuculiformes	0	459120
+Otidiformes	459120	0
+===========================
+	Gavia_stellata	N220	N238	Pelecaniformes
+Gavia_stellata	0	494570	255408	255408
+N220	494570	0	494570	494570
+N238	255408	494570	0	64550
+Pelecaniformes	255408	494570	64550	0
+===========================
+	Caprimulgidae	Caprimulgiformes1	N202
+Caprimulgidae	0	250996	250996
+Caprimulgiformes1	250996	0	119074
+N202	250996	119074	0
+===========================
+	Bucerotiformes	Leptosomus_discolor	N346	Trogoniformes
+Bucerotiformes	0	373294	48620	263202
+Leptosomus_discolor	373294	0	373294	373294
+N346	48620	373294	0	263202
+Trogoniformes	263202	373294	263202	0
+===========================
+	Cariamiformes	Falconiformes	Passeriformes	Psittaciformes
+Cariamiformes	0	427476	427476	427476
+Falconiformes	427476	0	314056	314056
+Passeriformes	427476	314056	0	142946
+Psittaciformes	427476	314056	142946	0
+===========================
+	Cathartes_aura	N297	Strigiformes
+Cathartes_aura	0	236256	475652
+N297	236256	0	475652
+Strigiformes	475652	475652	0
+===========================
+	Mesitornis_unicolor	Pterocliformes
+Mesitornis_unicolor	0	233572
+Pterocliformes	233572	0
+===========================

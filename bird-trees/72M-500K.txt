@@ -1,0 +1,63 @@
+# seq 1 14 | xargs -I{} bash -c 'nw_trim main-num_generations.tre 7200000|nw_distance -mm -n -  `sort -nk2 <(TreeCluster.py -i <(nw_trim main-num_generations.tre 7200000) -m max -t 500000) | grep -v "\-1" | grep -w {} | cut -f1 |tr "\n" " " `; echo ===========================; ' 
+	Columbina_picui	N90
+Columbina_picui	0	408896
+N90	408896	0
+===========================
+	Ceuthmochares_aereus	Piaya_cayana
+Ceuthmochares_aereus	0	124116
+Piaya_cayana	124116	0
+===========================
+	Alopecoenas_beccarii	Caloenas_nicobarica
+Alopecoenas_beccarii	0	327956
+Caloenas_nicobarica	327956	0
+===========================
+	Glareola_pratincola	Rhinoptilus_africanus
+Glareola_pratincola	0	441300
+Rhinoptilus_africanus	441300	0
+===========================
+	Nyctibius_bracteatus	Nyctibius_grandis
+Nyctibius_bracteatus	0	127128
+Nyctibius_grandis	127128	0
+===========================
+	Antrostomus_carolinensis	Chordeiles_acutipennis
+Antrostomus_carolinensis	0	184898
+Chordeiles_acutipennis	184898	0
+===========================
+	Calonectris_borealis	Pelecanoides_urinatrix
+Calonectris_borealis	0	236714
+Pelecanoides_urinatrix	236714	0
+===========================
+	Colius_striatus	Urocolius_indicus
+Colius_striatus	0	56318
+Urocolius_indicus	56318	0
+===========================
+	Amazona_guildingii	N367
+Amazona_guildingii	0	483034
+N367	483034	0
+===========================
+	Neodrepanis_coruscans	Serilophus_lunatus
+Neodrepanis_coruscans	0	44826
+Serilophus_lunatus	44826	0
+===========================
+	Eulacestoma_nigropectus	N482	N491	Oreocharis_arfaki	Oriolus_oriolus	Pachycephala_philippinensis
+Eulacestoma_nigropectus	0	487398	487398	487398	487398	487398
+N482	487398	0	415374	415374	415374	415374
+N491	487398	415374	0	197188	347190	347190
+Oreocharis_arfaki	487398	415374	197188	0	347190	347190
+Oriolus_oriolus	487398	415374	347190	347190	0	129660
+Pachycephala_philippinensis	487398	415374	347190	347190	129660	0
+===========================
+	N576	N621	N702
+N576	0	273980	273980
+N621	273980	0	203656
+N702	273980	203656	0
+===========================
+	Origma_solitaria	Pardalotus_punctatus
+Origma_solitaria	0	210774
+Pardalotus_punctatus	210774	0
+===========================
+	Cephalopterus_ornatus	N402	N418
+Cephalopterus_ornatus	0	205508	44256
+N402	205508	0	205508
+N418	44256	205508	0
+===========================
