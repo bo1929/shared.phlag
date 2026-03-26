@@ -59,23 +59,30 @@ missing_edge <- (pred %>% group_by(name) %>%
                    summarize(x=sum(is.nan(value)/n())) %>%
                    filter(x>0.1))$name
 
-pred_merged <- pred %>% 
-  filter(!name %in% missing_edge) %>%
+pred_merged <- pred %>%
   arrange(name, i) %>%
-  group_by(name, chr, with_chrZ) %>%
+  group_by(name) %>%
   mutate(
-    value_filled = zoo::na.locf(value, na.rm = FALSE),
-    new_seg = value_filled != lag(value_filled, default = first(value_filled)),
-    run_id = cumsum(new_seg)
+    value = (function(v) {
+      rle_v   <- rle(is.na(v))
+      fill_runs <- rle_v$values & rle_v$lengths < 10
+      fill_idx  <- rep(fill_runs, rle_v$lengths)
+      v[fill_idx] <- zoo::na.locf(v, na.rm = FALSE)[fill_idx]
+      v
+    })(value),
+    new_seg = is.na(value) |
+      is.na(lag(value)) |
+      value != lag(value, default = first(na.omit(value))),
+    run_id  = cumsum(new_seg)
   ) %>%
-  filter(!is.na(value_filled)) %>%
-  group_by(with_chrZ, name, value = value_filled, run_id, chr) %>%
+  filter(!is.na(value)) %>%
+  group_by(name, value, run_id, chr) %>%
   summarise(
     i_start   = min(i),
     i_end     = max(i),
     pos_start = pos[which.min(i)],
     pos_end   = pos[which.max(i)],
-    .groups = "drop"
+    .groups   = "drop"
   )
 anomalous_edge <- unique((pred_merged %>%
                             filter((i_end - i_start) > 2000 & value == 1))$name)
@@ -191,7 +198,7 @@ dfplot2 %>% # filter(!name %in% anomalous_edge) %>%
   scale_alpha_continuous(guide = "none") +
   labs(y="Clade", color="Distance", x="Coordinate (Mb)", title="Concatenation & updated prior")
   # lbl <- vroom("tmp/mapping_stiller_fig2a.tsv", col_names = c("name", "stiller_label"))
-ggsave2("concat_birds-updated_prior-woZ.pdf", width = 12, height = 4.5)
+# ggsave2("concat_birds-updated_prior-woZ.pdf", width = 12, height = 4.5)
 
 library(ggnewscale)
 dfplot <- merge(pred_merged, ann, by.x = "name", by.y="name")
@@ -310,8 +317,6 @@ dfplot2 %>% # filter(!name %in% anomalous_edge) %>%
   labs(y="Clade", color="with chrZ", x="Coordinate (Mb)", title="Concatenation")
 # lbl <- vroom("tmp/mapping_stiller_fig2a.tsv", col_names = c("name", "stiller_label"))
 
-
-
 dfplot <- merge(pred, ann, by.x = "name", by.y="name")
 dfplot <-merge(dfplot, distances)
 dfplot <- dfplot %>% filter(label_stiller %in% ghdisc)
@@ -344,90 +349,3 @@ dfplot %>%
   theme(axis.text.y = element_text(size = 11)) +
   scale_fill_brewer(palette = "Reds") +
   labs(fill="Distance")
-
-tp <- pred %>% group_by(name) %>% summarise(x=mean(value, na.rm=TRUE))
-
-# phylopic
-get_phylopic_image <- function(taxon_name) {
-  img <- tryCatch({
-    print(taxon_name)
-    uuid <- get_uuid(name = taxon_name, n = 1)
-    img <- get_phylopic(uuid = uuid)
-  }, warning = function(w) {
-    img <- NULL
-  }, error = function(e) {
-    img <- NULL
-  }, finally = {
-    img <- NULL
-  })
-  return(img)
-  
-}
-# install.packages("ggimage")
-library(rphylopic)
-library(ggimage)
-
-taxon_image_mapping <- tibble(
-  name = unique(dfplot$TaxonName),
-  image = sapply(sub(" \\+.*", "", unique(dfplot$TaxonName)), get_phylopic_image)
-)
-names(taxon_image_mapping)[1] <- "TaxonName"
-dfimg <- dfplot %>%
-  distinct(TaxonName) %>%
-  left_join(taxon_image_mapping, by = "TaxonName") %>%
-  mutate(
-    x = min(dfplot$i_start) - 0.05 * max(dfplot$i_end),
-    y = TaxonName
-  )
-
-
-ggplot(dfplot,
-       aes(x = i_start, xend = i_end, y = name, yend = name, color = factor(value))) +
-  # geom_segment(linewidth = 1) +
-  scale_color_manual(values = c("0" = "black", "1" = "red"), guide = "none") +
-  scale_y_discrete(name = "Taxon / Label", labels = y_labels) +
-  scale_x_continuous(
-    name = "Index (i)",
-    sec.axis = sec_axis(~ ., name = "Genomic position",
-                        breaks = break_idx,
-                        labels = scales::comma(break_pos))
-  ) +
-  geom_phylopic(
-    img = dft$image, data = dft , aes(x = x, y = y), inherit.aes = FALSE) +
-  theme_minimal() +
-  theme(
-    panel.grid.major.y = element_blank(),
-    panel.grid.minor = element_blank()
-  )
-
-
-
-dft<-subset(dfimg, !mapply(is.null, image)) %>% mutate(TaxonName=sub(" \\+.*", "", TaxonName))
-
-
-
-
-
-
-dqqs %>%
-  mutate(l=) %>%
-  ggplot() +
-  aes(x = i, y = I210) +
-  facet_wrap(~y, nrow = 3) +
-  # geom_hline(yintercept = 0.33) +
-  geom_line(size=0.05) +
-  # geom_area(aes(x = i, y = l), fill="red", alpha=1) + 
-  # geom_line(aes(x = i, y = l), color="red", alpha=1) + 
-  geom_ma(aes(x = i, y = l), ma_fun = SMA, n = 5, color = "red", size=0.25, linetype = "solid") +
-  geom_ma(ma_fun = SMA, n = 50, color = "blue", size=0.25, linetype = "solid") +
-  # geom_ma(aes(x = i, y = l), ma_fun = SMA, n = 50, color = "red", size=0.25, linetype = "solid") +
-  theme_cowplot() +
-  scale_x_continuous()# + 
-coord_cartesian(ylim = c(0, 1), xlim = c(15000, 16000))
-
-y<- vroom("/Users/asapci/Desktop/region-segmentation/CASTER-data/Biological/Mammal241/SlidingWindow/x", col_names = c("b", "chr", "pos", "a",  "top", "v1", "v2"))
-
-df %>%
-  pivot_longer(cols = -c("clade", "y")) %>%
-  group_by(clade, y) %>%
-  summarise(variance = var(value))
