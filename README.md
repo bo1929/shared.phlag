@@ -2,7 +2,7 @@
 Data and scripts used in outlier/non-MSC region detection experiments and benchmarking Phlag.
 
 # Note
-This repository ended up becoming too big and difficult to clone. I've created separate repositories for different sub-datasets.
+This repository ended up becoming too big and difficult to clone. I've created separate repositories for different sub-datasets. However, ARGs are only available in this general one.
 
 See: 
 * gene trees simulated using msprime and simulation experiments: [phlag-avian-simulations](https://github.com/bo1929/phlag-avian-simulations),
